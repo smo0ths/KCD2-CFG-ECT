@@ -1,4 +1,4 @@
-## updated 2/6/2025 v0.0.3 :ramen: e_timeofday=4.2
+## updated 2/6/2025 v0.0.4 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -47,6 +47,10 @@ q_shaderwater=3 ##
 bind f2 "exec user.cfg" ## ""
 
 cl_sensitivity=10 ## ""
+
+s_mastervolume=1 ## 1 ""
+s_musicvolume=0.5 ## 1 ""
+s_soundvolume=1 ## 1 ""
 
 r_multigpu=0 ## 1 ""
 r_vsync=0 ## 1 ""
@@ -129,6 +133,7 @@ r_texturesstreampooldefragmentationmaxamount=524288 ## 524288 "vram"
 r_texturesstreampooldefragmentationmaxmoves=8 ## 8 "vram"
 r_volumetricfogtexdepth=64 ## 64 ""
 r_waterreflectionsquality=0 ## 4 "4 is wrong should be 0"
+sys_budget_soundchannels=32 ## 32 ""
 sys_budget_streamingthroughput=1024 ## 1024 "ram"
 sys_budget_sysmem=512 ## 512 "ram debug"
 sys_budget_videomem=90 ## 90 "vram debug"
@@ -173,6 +178,7 @@ e_lodfaceareatargetsizevegetationmult=1 ## 1
 e_lodmax=5 ## 5
 e_lodmin=0 ## 0
 e_lodminttris=300 ## 300
+e_maxviewdistance=-1 ## -1
 e_maxviewdistspeclerp=1 ## 1
 e_mergedmeshescullinglodratiowh=0.7 ## 0.7
 e_mergedmeshesdissolverangewh=20 ## 20
