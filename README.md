@@ -1,4 +1,4 @@
-## updated 2/6/2025 v0.0.3 :ramen: e_TimeOfDay=4.2
+## updated 2/6/2025 v0.0.3 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -314,28 +314,28 @@ wh_r_texturesstreamingscheduletimelimitus=3000 ## 3000
 ## ect
 
 ```python
-Enable Rebar Gives You ~3 Fps (In Nvidiaprofileinspector)
+enable rebar gives you ~3 fps (in nvidiaprofileinspector)
 
-Update Dlss To Latest And Force Preset K (In Nvidiaprofileinspector)
+update dlss to latest and force preset k (in nvidiaprofileinspector)
 
-Keybinds:
-Accept/Use - V
-Pat Your Dog Or Horse - E
-Toggle Crouch - L Ctrl
-Lock On Opponent - C
-Inventory - Tab
-Cycle Tabs - I
-Combat Free Look - L Alt
-Quick Chat With Focus - Mouse 3
-Follow Npc Or Focus Camera - Mouse 3
+keybinds:
+accept/use - v
+pat your dog or horse - e
+toggle crouch - l ctrl
+lock on opponent - c
+inventory - tab
+cycle tabs - i
+combat free look - l alt
+quick chat with focus - mouse 3
+follow npc or focus camera - mouse 3
 
-Game Settings:
-Telemetry - No
-In-Game Chatter Subtitles - No
+game settings:
+telemetry - no
+in-game chatter subtitles - no
 
-Mods:
-Unlimited Saving Ii-14-1-0-1738700295.Zip
-More Carry Weight - Ptf - Max-63-1-1-1738734672.7Z
+mods:
+unlimited saving ii-14-1-0-1738700295.zip
+more carry weight - ptf - max-63-1-1-1738734672.7z
 ```
 
 ---
