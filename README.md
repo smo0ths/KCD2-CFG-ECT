@@ -1,4 +1,4 @@
-## updated 2/7/2025 v0.0.6a :ramen: e_timeofday=4.2
+## updated 2/7/2025 v0.0.6b :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -181,7 +181,7 @@ e_fog=1 -- 1 "render fog"
 e_volumetricfog=1 -- 1 "volumetric fog, require_app_restart"
 r_fogshadows=0 -- 0 "test 1"
 r_fogshadowswater=1 -- 1 "test 0"
-r_volumetricfogdownscaledsunshadow=-1 -- -1 "test 0,1,2 -1 is nul"
+r_volumetricfogdownscaledsunshadow=-1 -- -1 "test, volumetric fog sun shadows"
 r_volumetricfogdownscaledsunshadowratio=1 -- 1
 r_volumetricfogminimumlightbulbsize=2 -- 2 "test 0,0.4,1,2"
 r_volumetricfogreprojectionblendfactor=0.9 -- 0.9
@@ -375,6 +375,7 @@ e_decalsplacementtestareasize=0.08 -- 0.08
 e_decalsrange=20 -- 20
 
 -- ect unused
+-- bind f2 exec root/user.cfg --
 -- e_dynamiclights=1 -- 1
 -- q_quality= -- "sets all"
 -- q_shadersky=3 -- "not used"
@@ -387,6 +388,7 @@ e_decalsrange=20 -- 20
 -- r_texturesstreampoolsize=10240 -- 10240 "vram 5120,8192,10240 8gb,12gb,16gb"
 -- r_width=3840 -- ""
 -- r_xboximmediatethresholdpercent=5 -- 5
+-- sys_PakPriority=2 -- ""
 -- sys_spec_full= -- "sets all"
 -- sys_spec_textureresolution=9 -- 9 "vram 7,8,9 8gb,12gb,16gb"
 -- wh_cs_playerlockdisabled=0 -- 0
