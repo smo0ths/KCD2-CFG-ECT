@@ -124,7 +124,7 @@ r_zprepassmaxdist=16 -- 16
 -- ram
 e_streamcgfpoolsize=1280 -- 1280 "test 512,1024, ram"
 sys_budget_streamingthroughput=1024 -- 1024 "test 3000, ram"
-sys_budget_sysmem=512 -- 512 "test 0, ram debug"
+sys_budget_sysmem=512 -- 512 "test 0, ram, debug"
 sys_flash_address_space=65536 -- 65536 "test 131072, ram, require_app_restart"
 sys_pakstreamcache=0 -- 0 "test, ram"
 
@@ -149,7 +149,7 @@ r_texminanisotropy=16 -- 16 "require_level_reload"
 r_texpreallocateatlases=0 -- 0
 r_textureloddistanceratio=-1 -- -1
 r_texturesstreaming=2 -- 2 "require_app_restart"
-r_texturesstreamingmaxrequestedmb=4 -- 4 "test 1024, vram"
+r_texturesstreamingmaxrequestedmb=4 -- 4 "test 20,1024, vram"
 r_texturesstreamingminusablemips=8 -- 8
 r_texturesstreamingskipmips=0 -- 0
 r_texturesstreampooldefragmentation=0 -- 0 "vram"
@@ -288,7 +288,7 @@ r_shadowcastinglightsmaxcount=24 -- 24
 r_shadowspcfiltering=1 -- 1
 r_shadowsscreenspace=1 -- 1
 
--- deferredshading
+-- deferred shading
 r_deferredshadingarealights=1 -- 1
 r_deferredshadingfiltergbuffer=0 -- 0
 r_deferredshadingsss=1 -- 1
