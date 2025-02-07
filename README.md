@@ -69,7 +69,7 @@ r_drawnearfov=68 -- 60 "68 is 100, 59 is 90, horizontal"
 
 -- better antialiasing
 r_superresolution_mode=2 -- "dlss"
-r_superresolution_nvidia_dlss_qualitymode=1 -- "1,2,3 quality,balanced,performance"
+r_superresolution_nvidia_dlss_qualitymode=1 -- "1,2,3, quality,balanced,performance"
 r_superresolution_sharpness=0 -- 0.5 ""
 r_superresolution_texturemipbias=0 -- 0 "test 0.5,1"
 
