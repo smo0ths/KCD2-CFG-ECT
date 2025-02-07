@@ -1,4 +1,4 @@
-## updated 2/7/2025 v0.0.6 :ramen: e_timeofday=4.2
+## updated 2/7/2025 v0.0.6a :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -105,7 +105,7 @@ r_sharpening=0 -- 0
 r_ssreflections=2 -- 2
 r_ssreflhalfres=0 -- 0
 
--- miscellaneous
+-- miscs
 ca_usephysics=1 -- 1 "physics simulation"
 e_deformableobjects=1 -- 1 "deform physics"
 e_skyquality=1 -- 1
@@ -178,10 +178,9 @@ r_watervolumecausticsmaxdist=35 -- 35
 
 -- fog
 e_fog=1 -- 1 "render fog"
-e_volumetricfog=1 -- 1 "volumetric fog require_app_restart"
+e_volumetricfog=1 -- 1 "volumetric fog, require_app_restart"
 r_fogshadows=0 -- 0 "test 1"
 r_fogshadowswater=1 -- 1 "test 0"
-r_volumetricclouds=2 -- 2
 r_volumetricfogdownscaledsunshadow=-1 -- -1 "test 0,1,2 -1 is nul"
 r_volumetricfogdownscaledsunshadowratio=1 -- 1
 r_volumetricfogminimumlightbulbsize=2 -- 2 "test 0,0.4,1,2"
@@ -194,6 +193,14 @@ r_volumetricfogtexdepth=64 -- 64 "test 16,32"
 r_volumetricfogtexscale=10 -- 10 "test 20"
 wh_pl_fowenabled=1 -- 1
 wh_pl_fowvisibilityradius=100 -- 100
+
+-- procedural volumetric clouds
+r_volumetricclouds=2 -- 2 "test 0,1"
+r_volumetriccloudspipeline=0 -- 0 "test 1"
+r_volumetriccloudsraymarchstepnum=64 -- 64 "test 16 to 256"
+r_volumetriccloudsshadowresolution=64 -- 64
+r_volumetriccloudsstereoreprojection=1 -- 1
+r_volumetriccloudstemporalreprojection=1 -- 1 "test 0"
 
 -- screen space directional occlusion
 r_ssdo=1 -- 1
@@ -257,7 +264,7 @@ e_particlesshadows=1 -- 1
 e_particlessoftintersect=1 -- 1
 e_particlessortquality=1 -- 1
 g_breakage_particles_limit=200 -- 200 "test 160"
-gpu_particle_physics=1 -- 0 "test 1 require_app_restart"
+gpu_particle_physics=1 -- 0 "test 1, require_app_restart"
 r_particleshalfres=0 -- 0
 r_particlestessellation=1 -- 1
 wh_e_particlesviewdistmul=3 -- 3
