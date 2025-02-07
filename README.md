@@ -1,4 +1,4 @@
-## updated 2/7/2025 v0.0.6b :ramen: e_timeofday=4.2
+## updated 2/7/2025 v0.0.6c :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
