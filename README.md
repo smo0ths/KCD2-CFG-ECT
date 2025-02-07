@@ -105,7 +105,7 @@ r_sharpening=0 -- 0
 r_ssreflections=2 -- 2
 r_ssreflhalfres=0 -- 0
 
--- miscs
+-- miscellaneous
 ca_usephysics=1 -- 1 "physics simulation"
 e_deformableobjects=1 -- 1 "deform physics"
 e_skyquality=1 -- 1
