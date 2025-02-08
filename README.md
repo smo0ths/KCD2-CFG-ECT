@@ -1,4 +1,4 @@
-## updated 2/8/2025 v0.1.1 :ramen: e_timeofday=4.2
+## updated 2/8/2025 v0.1.1a :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -120,6 +120,7 @@ r_zfightingdepthscale=0.995 # 0.995
 r_zfightingextrude=0.001 # 0.001
 r_zpassdepthsorting=1 # 1
 r_zprepassmaxdist=16 # 16
+s_occlusionmaxdistance=500 # 500
 wh_pl_showfirecursor=1 # 0 "" 🟩
 wh_ui_bubblesenabled=0 # 0 "" 🟩
 wh_ui_enablesubtitlespeakername=1 # 0 "" 🟩
@@ -324,7 +325,7 @@ r_deferredshadingtiled=3 # 3
 r_deferredshadingtiledhairquality=2 # 2
 
  # lods 0
-ca_attachmentcullingration=1000 # 1000 "test 450"
+ca_attachmentcullingration=1000 # 1000
 e_lodcompmaxsize=6 # 6 "test"
 e_lodfaceareatargetsize=0.0012 # 0.0012 "test 0.0006"
 e_lodratio=60 # 60 "test 70"
@@ -337,7 +338,6 @@ e_viewdistmin=5 # 5 "test 10"
 e_viewdistratio=140 # 140 "test 125,150"
 e_viewdistratiovegetation=140 # 140 "test 65,100,125,150"
 r_detaildistance=6 # 6 "test 1 threw 20, perpixel detail layers blending"
-s_occlusionmaxdistance=500 # 500
 wh_ai_lod_maxcountdetail=80 # 80
 wh_ai_lod_maxdetaildistance=180 # 180
 wh_ca_geometricmeanoverride=0.0004 # 0.0004
