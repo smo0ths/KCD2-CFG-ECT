@@ -416,7 +416,7 @@ e_decalsplacementtestareasize=0.08 #0.08
 e_decalsrange=20 #20
 
 ## etcetera, unused
-#con_display_last_messages=0#
+#con_display_last_messages=0 #
 #con_line_buffer_size=1000 #1000
 #e_dynamiclights=1 #1
 #e_particlesmotionblur= #""
