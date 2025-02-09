@@ -172,7 +172,7 @@ r_postprocessgamefx=1 #1
 r_sharpening=0 #0
 r_ssreflections=2 #2
 r_ssreflhalfres=0 #0
-wh_cl_neardof=0 #0 🟩
+wh_cl_neardof=0 #1 🟩
 
 ## textures
 r_envcmresolution=2 #2 "environment cubemap"
