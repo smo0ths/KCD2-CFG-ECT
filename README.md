@@ -1,12 +1,3 @@
-## updated 2/8/2025 v0.1.1b :ramen: e_timeofday=4.2
-
-#### wip ultra config i will be optimizing more
-
-#### mods ect under cfg
-
----
-
-```python
 ## create user.cfg in kingdomcomedeliverance2 folder and copy paste
 ## delete cache folder %userprofile%/saved games/kingdomcome2/shaders (not needed, maybe after update)
 ## add launch commands: +exec user.cfg
@@ -17,7 +8,7 @@
 con_restricted=0 #
 
 ## custom cfg
-sys_spec=0 #"" 🟩
+sys_spec=0 # 🟩
 
 ## sys cfg
 sys_spec_characters=4 #
@@ -55,7 +46,7 @@ sys_budget_sysmem=512 #512 "test 0, ram, debug"
 sys_budget_videomem=90 #90 "test 0, vram, debug"
 sys_flash_address_space=65536 #65536 "test 131072, ram, require_app_restart"
 sys_flash_check_filemodtime=0 #0
-sys_maxfps=158 #-1 "" 🟩
+sys_maxfps=158 #-1 🟩
 sys_pakstreamcache=0 #0 "test 1, ram"
 sys_streaming_max_bandwidth=0 #0 "test 2000, vram"
 
@@ -81,10 +72,10 @@ r_waterupdatethread=5 #5
 
 ## custom 3
 e_streamcgfpoolsize=1280 #1280 "test 512,1024,2048, ram, render mesh cache"
-log_enableremoteconsole=0 #1 "" 🟩
-r_multigpu=0 #1 "" 🟩
+log_enableremoteconsole=0 #1 🟩
+r_multigpu=0 #1 🟩
 r_rendertargetpoolsize=0 #0 "test 1024, vram"
-r_vsync=0 #1 ""
+r_vsync=0 #1 🟩
 
 ## binds
 bind mwheel_down cl_fov 68
@@ -92,13 +83,13 @@ bind mwheel_up cl_fov 25
 bind slash exec root/user.cfg
 
 ## mouse
-cl_sensitivity=10 #"" 🟩
+cl_sensitivity=10 # 🟩
 i_mouse_accel=0 #0
 i_mouse_smooth=0 #0
 
 ## sound volumes
 s_mastervolume=1 #1
-s_musicvolume=0.6 #1 "" 🟩
+s_musicvolume=0.6 #1 🟩
 s_soundvolume=1 #1
 
 ## field of views
@@ -125,16 +116,16 @@ r_zfightingextrude=0.001 #0.001
 r_zpassdepthsorting=1 #1
 r_zprepassmaxdist=16 #16
 s_occlusionmaxdistance=500 #500
-wh_pl_showfirecursor=1 #0 "" 🟩
-wh_ui_bubblesenabled=0 #0 "" 🟩
-wh_ui_enablesubtitlespeakername=1 #0 "" 🟩
-wh_ui_shownormalcursor=1 #1 "" 🟩
-wh_ui_subtitlesize=3 #0 "" 🟩
+wh_pl_showfirecursor=1 #0 🟩
+wh_ui_bubblesenabled=0 #0 🟩
+wh_ui_enablesubtitlespeakername=1 #0 🟩
+wh_ui_shownormalcursor=1 #1 🟩
+wh_ui_subtitlesize=3 #0 🟩
 
 ## better antialiasing
 r_superresolution_mode=2 #"dlss" 🟩
 r_superresolution_nvidia_dlss_qualitymode=1 #"1,2,3, quality,balanced,performance" 🟩
-r_superresolution_sharpness=0 #0.5 "" 🟩
+r_superresolution_sharpness=0 #0.5 🟩
 r_superresolution_texturemipbias=0 #0 "test 0.5,1"
 
 ## post process based antialiasing
@@ -143,14 +134,14 @@ r_antialiasingtaapattern=1 #1
 r_antialiasingtaasharpening=0 #0
 
 ## supersampled antialiasing
-r_supersampling=0 #1 "" 🟩
+r_supersampling=0 #1 🟩
 r_supersamplingfilter=0 #0
 
 ## post process
-g_radialblur=0 #1 "" 🟩
+g_radialblur=0 #1 🟩
 r_chromaticaberration=0 #0
 r_colorgrading=1 #1
-r_depthoffield=0 #2 "" 🟩
+r_depthoffield=0 #2 🟩
 r_depthoffieldbokehquality=0 #0
 r_depthoffieldmode=1 #1
 r_flarehqshafts=1 #1
@@ -159,10 +150,10 @@ r_hdrbloom=1 #1
 r_hdrbloomquality=2 #2
 r_hdreyeadaptationmode=1 #1
 r_hdreyeadaptationspeed=3 #3
-r_hdrgrainamount=0 #1 "" 🟩
+r_hdrgrainamount=0 #1 🟩
 r_hdrrangeadapt=0 #0
 r_hdrtexformat=1 #1
-r_hdrvignetting=0 #1 "" 🟩
+r_hdrvignetting=0 #1 🟩
 r_motionblur=0 #2 "1,2, camera,camera and object" 🟩
 r_motionblurquality=2 #2 "0,1,2, low,med,high, sample count"
 r_motionblurshutterspeed=200 ##200
@@ -172,7 +163,7 @@ r_postprocessgamefx=1 #1
 r_sharpening=0 #0
 r_ssreflections=2 #2
 r_ssreflhalfres=0 #0
-wh_cl_neardof=0 #0 "" 🟩
+wh_cl_neardof=0 #0 🟩
 
 ## textures
 r_envcmresolution=2 #2 "environment cubemap"
@@ -419,7 +410,7 @@ e_decalsrange=20 #20
 #con_display_last_messages=0 #
 #con_line_buffer_size=1000 #1000
 #e_dynamiclights=1 #1
-#e_particlesmotionblur= #""
+#e_particlesmotionblur= #
 #e_viewdistratiocustom=60 #60 "not used"
 #e_viewdistratiodetail=30 #30 "not used"
 #memstats=0 #0 "debug"
@@ -445,37 +436,3 @@ e_decalsrange=20 #20
 #wh_ui_showcompass=1 #1
 #wh_ui_showhud=1 #1
 #wh_ui_showstats=1 #1
-```
-
----
-
-## ect
-
-```python
-## enable rebar gives you ~3 fps (in nvidiaprofileinspector)
-
-## update dlss to latest and force preset k(0x0000000B) (in nvidiaprofileinspector)
-
-## keybinds
-accept/use                  - v
-combat free look            - l alt
-cycle tabs                  - i
-follow npc or focus camera  - mouse 3
-inventory                   - tab
-jump                        - space | mouse 4 (this is also dodge)
-lock on opponent            - c
-pat your dog or horse       - e
-quick chat with focus       - mouse 3
-special attack              - f | mouse 5 (kick in clinch/fistfight, mercy kill, tackle, stealth kill/takedown)
-toggle crouch               - l ctrl
-
-## game settings
-in-game chatter subtitles - no
-telemetry - no
-
-## mods
-more carry weight - ptf - max-63-1-1-1738734672.7z
-unlimited saving ii-14-1-0-1738700295.zip
-```
-
----
