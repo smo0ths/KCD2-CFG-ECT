@@ -1,4 +1,4 @@
-## updated 2/8/2025 v0.1.1c :ramen: e_timeofday=4.2
+## updated 2/9/2025 v0.1.2 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -10,6 +10,7 @@
 ## create user.cfg in kingdomcomedeliverance2 folder and copy paste
 ## delete cache folder %userprofile%/saved games/kingdomcome2/shaders (not needed, maybe after update)
 ## add launch commands: +exec user.cfg
+## "-devmode" is for debug/dev tools so its not needed
 ## and restart after getting to main menu (needed depending on cvar)
 ## 🟩 shows changes from default ultra
 
@@ -47,7 +48,7 @@ q_shaderterrain=3 #
 q_shadervegetation=3 #
 q_shaderwater=3 #
 
-## custom sys 0
+## custom sys 1
 sys_budget_soundchannels=32 #32
 sys_budget_soundcpu=15 #15 "test 0, monitoring budget"
 sys_budget_streamingthroughput=1024 #1024 "test 3000, ram"
@@ -59,7 +60,7 @@ sys_maxfps=158 #-1 🟩
 sys_pakstreamcache=0 #0 "test 1, ram"
 sys_streaming_max_bandwidth=0 #0 "test 2000, vram"
 
-## custom sys 1
+## custom sys 2
 sys_job_system_enable=1 #1
 sys_job_system_max_worker=8 #16 "test 0,8" 🟩
 sys_limit_phys_thread_count=1 #1 "limits p_num_threads to physical cpu count"
@@ -74,12 +75,12 @@ sys_taskthread3_cpu=3 #3
 sys_taskthread4_cpu=2 #2
 sys_taskthread5_cpu=1 #1
 
-## custom 2
+## custom 3
 e_svoti_numstreamingthreads=2 #2 "test"
 p_num_threads=1 #1 "test, internal physics threads"
 r_waterupdatethread=5 #5
 
-## custom 3
+## custom 4
 e_streamcgfpoolsize=1280 #1280 "test 512,1024,2048, ram, render mesh cache"
 log_enableremoteconsole=0 #1 🟩
 r_multigpu=0 #1 🟩
@@ -107,16 +108,26 @@ pl_movement.power_sprint_targetfov=68 #55 "68 is 100, 59 is 90, horizontal" 🟩
 r_drawnearfov=68 #60 "68 is 100, 59 is 90, horizontal" 🟩
 
 ## miscellaneous
+ca_streamchr=1 #1 "character streaming"
 ca_usephysics=1 #1 "physics simulation"
+e_clouds=1 #1
 e_deformableobjects=1 #1 "deform physics"
+e_geomcachebuffersize=32 #32
+e_geomcachemaxplaybackfrommemorysize=0 #0
 e_mergedmeshesusespines=1 #1
 e_skyquality=1 #1
-e_statobjtessellationmode=1 #1 "pretessellated mesh"
-e_tessellation=0 #0 "test 1, hw geometry tessellation"
 e_vegetation=1 #1
+g_battledust_enable=1 #1 "test 0"
+i_lighteffects=1 #1
 r_colorbits=32 #32 "color resolution in bpp, require_app_restart"
+r_displayinfotargetdrawcalls=0 #0
+r_displayinfotargetpolygons=0 #0
+r_reflections=0 #1 "not used" 🟩
+r_reflectionsquality=0 #3 "test 0,1,2,4, not used" 🟩
 r_refraction=1 #1
+r_silhouettepom=0 #0
 r_sunshafts=2 #2
+r_transpdepthfixup=1 #1
 r_usehwskinning=1 #1 "gpu deformation of a vertices"
 r_usemateriallayers=2 #2 "material layers"
 r_usezpass=2 #2 "expensive materials"
@@ -124,23 +135,41 @@ r_zfightingdepthscale=0.995 #0.995
 r_zfightingextrude=0.001 #0.001
 r_zpassdepthsorting=1 #1
 r_zprepassmaxdist=16 #16
-s_occlusionmaxdistance=500 #500
+s_occlusionmaxdistance=500 #500 "test 0"
+sys_physics=1 #1
 wh_pl_showfirecursor=1 #0 🟩
 wh_ui_bubblesenabled=0 #1 🟩
 wh_ui_enablesubtitlespeakername=1 #0 🟩
 wh_ui_shownormalcursor=1 #1
 wh_ui_subtitlesize=3 #0 🟩
 
-## better antialiasing
+## tessellation
+e_shadowstessellatecascades=1 #1
+e_statobjtessellationmode=1 #1 "pretessellated mesh"
+e_tessellation=0 #0 "test 1, hw geometry tessellation"
+e_tessellationmaxdistance=30 #30
+e_watertessellationamount=10 #10
+e_watertessellationamountx=10 #10 "test 85"
+e_watertessellationamounty=10 #10 "test 85"
+e_watertessellationswathwidth=12 #12 "test 10"
+e_waterwavestessellationamount=5 #5
+r_flarestessellationratio=1 #1
+r_particlestessellation=1 #1
+r_particlestessellationtrisize=16 #16
+r_tessellationtrianglesize=8 #8
+sys_flash_curve_tess_error=2 #2 "curve tessellation"
+
+## antialiasing 1
 r_superresolution_mode=2 # "dlss" 🟩
 r_superresolution_nvidia_dlss_qualitymode=1 # "1,2,3, quality,balanced,performance" 🟩
 r_superresolution_sharpness=0 #0.5 🟩
 r_superresolution_texturemipbias=0 #0 "test 0.5,1"
 
-## post process based antialiasing
+## antialiasing 2
 r_antialiasingmode=3 #3
 r_antialiasingtaapattern=1 #1
 r_antialiasingtaasharpening=0 #0
+sys_flash_edgeaa=0 #1 🟩
 
 ## supersampled antialiasing
 r_supersampling=0 #1 🟩
@@ -184,7 +213,7 @@ r_texpreallocateatlases=0 #0
 r_textureloddistanceratio=-1 #-1
 r_texturesstreaming=2 #2 "require_app_restart"
 r_texturesstreamingmaxrequestedmb=4 #4 "test 20,1024, vram"
-r_texturesstreamingminusablemips=8 #8
+r_texturesstreamingminusablemips=8 #8 "test"
 r_texturesstreamingskipmips=0 #0
 r_texturesstreampooldefragmentation=0 #0 "test 1,2, vram"
 r_texturesstreampooldefragmentationmaxamount=524288 #524288 "test 2097152,3145728, vram"
@@ -195,16 +224,11 @@ wh_r_texturesstreamingscheduletimelimitus=3000 #3000
 e_waterocean=0 #0
 e_wateroceanbottom=1 #1
 e_wateroceanfft=0 #0
-e_watertessellationamount=10 #10
-e_watertessellationamountx=10 #10 "test 85"
-e_watertessellationamounty=10 #10 "test 85"
-e_watertessellationswathwidth=12 #12 "test 10"
 e_waterwaves=0 #0
-e_waterwavestessellationamount=5 #5
-r_watercaustics=1 #1 "test 0, not used"
-r_watergodrays=1 #1 "test 0, not used"
-r_waterreflections=1 #1 "test 0, not used"
-r_waterreflectionsquality=4 #4 "test 0,1,2,3"
+r_watercaustics=0 #1 "test 0, not used" 🟩
+r_watergodrays=0 #1 "test 0, not used" 🟩
+r_waterreflections=0 #1 "test 0, not used" 🟩
+r_waterreflectionsquality=0 #4 "test 0,1,2,3, not used" 🟩
 r_watervolumecaustics=0 #0
 r_watervolumecausticsdensity=128 #128 "test 256"
 r_watervolumecausticsmaxdist=35 #35
@@ -223,7 +247,7 @@ r_volumetricfogsample=2 #2 "test 0,1"
 r_volumetricfogshadow=1 #1 "test 0"
 r_volumetricfogsunlightcorrection=1 #1
 r_volumetricfogtexdepth=64 #64 "test 16,32"
-r_volumetricfogtexscale=10 #10 "test 20"
+r_volumetricfogtexscale=10 #10 "test 12,20"
 wh_pl_fowenabled=1 #1
 wh_pl_fowvisibilityradius=100 #100
 
@@ -281,7 +305,6 @@ wh_e_hlodvegetationswitchingdistances=8000 4000 2000 500
 ## cloth
 ca_clothblending=1 #1
 ca_clothbypasssimulation=0 #0
-ca_clothbypasssimulation=0 #0
 ca_vclothmode=1 #1
 es_maxphysdistcloth=300 #300 "test 100"
 wh_ca_clothbudgetmaxframestoskip=1 #1
@@ -300,7 +323,8 @@ e_particlessortquality=1 #1
 g_breakage_particles_limit=200 #200 "test 160"
 gpu_particle_physics=1 #0 "test 1, require_app_restart" 🟩
 r_particleshalfres=0 #0
-r_particlestessellation=1 #1
+r_particlesrefraction=1 #1
+r_particlessoftisec=1 #1
 wh_e_particlesviewdistmul=3 #3
 
 ## shadows
@@ -331,7 +355,7 @@ r_deferredshadingsss=1 #1
 r_deferredshadingtiled=3 #3
 r_deferredshadingtiledhairquality=2 #2
 
-## lods 0
+## lods 1
 ca_attachmentcullingration=1000 #1000
 ca_facialanimationradius=30 #30
 e_lodcompmaxsize=6 #6 "test"
@@ -340,8 +364,10 @@ e_lodratio=60 #60 "test 70"
 e_mergedmeshesinstancedist=24 #24 "test 16,32"
 e_mergedmesheslodratio=30 #30 "test 16,8"
 e_mergedmeshesviewdistratio=140 #140 "test 100"
+e_occlusioncullingviewdistratio=1 #1
 e_streaminstancesminloadednodes=128 #128 "test 64"
 e_terraindetailmaterialsviewdistz=80 #80 "test 100,120"
+e_terrainocclusioncullingmaxdist=200 #200
 e_viewdistmin=5 #5 "test 10"
 e_viewdistratio=140 #140 "test 125,150"
 e_viewdistratiovegetation=140 #140 "test 65,100,125,150"
@@ -353,14 +379,15 @@ wh_ca_geometricmeanoverride=0.0004 #0.0004
 wh_e_viewdistratioroad=130 #130
 wh_item_viewdistratio=100 #100
 
-## lods 1
+## lods 2
 e_physproxytrilimit=5000 #5000 "test 1000"
+es_debrislifetimescale=1 #1
 es_maxphysdist=100 #100
 g_tree_cut_reuse_dist=0 #0 "test 0.35"
 p_cull_distance=100 #100
 p_num_bodies_large_group=100 #100 "test 10"
 
-## lods 2
+## lods 3
 e_charlodmin=0 #0
 e_coveragebufferterrainexpand=0.025 #0.025 "axisaligned bounding box z to avoid flat terrain flickering"
 e_cullvegactivation=50 #50
@@ -377,7 +404,7 @@ e_mergedmeshesusedissolvewh=1 #1
 e_objquality=4 #4 "test 3"
 e_statobjmergemaxtrisperdrawcall=500 #500
 e_terraindetailmaterialsviewdistxy=35 #35
-e_tessellationmaxdistance=30 #30
+e_vegetationminsize=0 #0
 e_vegetationuseterraincolor=1 #1
 e_vegetationuseterraincolordistance=250 #250
 e_viewdistratiointeriorreflexlights=0.9 #0.9
