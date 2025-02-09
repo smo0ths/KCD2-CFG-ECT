@@ -1,4 +1,4 @@
-## updated 2/9/2025 v0.1.2 :ramen: e_timeofday=4.2
+## updated 2/9/2025 v0.1.2a :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -110,6 +110,7 @@ r_drawnearfov=68 #60 "68 is 100, 59 is 90, horizontal" 🟩
 ## miscellaneous
 ca_streamchr=1 #1 "character streaming"
 ca_usephysics=1 #1 "physics simulation"
+e_autoprecachecamerajumpdist=16 #16
 e_clouds=1 #1
 e_deformableobjects=1 #1 "deform physics"
 e_geomcachebuffersize=32 #32
@@ -350,7 +351,7 @@ r_shadowsscreenspace=1 #1
 ## deferred shading
 r_deferredshading3pl=0 #3 "test, three point lighting" 🟩
 r_deferredshadingarealights=1 #1
-r_deferredshadingfiltergbuffer=0 #0
+r_deferredshadingfiltergbuffer=0 #0 "test 1"
 r_deferredshadingsss=1 #1
 r_deferredshadingtiled=3 #3
 r_deferredshadingtiledhairquality=2 #2
@@ -459,6 +460,7 @@ e_decalsrange=20 #20
 #r_shadowscacheresolutions= #
 #r_superresolution_amd_fsr_customresolutionscalewh=0.5 #0.5
 #r_superresolution_amd_fsr_qualitymode=0 #0
+#r_superresolution_nvidia_dlss_preset=0 #0
 #r_superresolution_sony_pssr_resolutionscale=0.5 #0.5
 #r_texturesstreampoolsize=10240 #10240 "vram 5120,8192,10240, 8gb,12gb,16gb"
 #r_width=3840 #
@@ -497,7 +499,6 @@ special attack              - f | mouse 5 (kick in clinch/fistfight, mercy kill,
 toggle crouch               - l ctrl
 
 ## game settings
-in-game chatter subtitles - no
 telemetry - no
 
 ## mods
