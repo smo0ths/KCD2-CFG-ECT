@@ -11,7 +11,7 @@
 ## delete cache folder %userprofile%/saved games/kingdomcome2/shaders (not needed, maybe after update)
 ## add launch commands: +exec user.cfg
 ## and restart after getting to main menu (needed depending on cvar)
-## 🟩 shows tests/changes from default ultra
+## 🟩 shows changes from default ultra
 
 ## console access
 con_restricted=0 #
