@@ -126,9 +126,9 @@ r_zpassdepthsorting=1 #1
 r_zprepassmaxdist=16 #16
 s_occlusionmaxdistance=500 #500
 wh_pl_showfirecursor=1 #0 🟩
-wh_ui_bubblesenabled=0 #0 🟩
+wh_ui_bubblesenabled=0 #1 🟩
 wh_ui_enablesubtitlespeakername=1 #0 🟩
-wh_ui_shownormalcursor=1 #1 🟩
+wh_ui_shownormalcursor=1 #1
 wh_ui_subtitlesize=3 #0 🟩
 
 ## better antialiasing
