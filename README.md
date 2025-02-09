@@ -132,8 +132,8 @@ wh_ui_shownormalcursor=1 #1 🟩
 wh_ui_subtitlesize=3 #0 🟩
 
 ## better antialiasing
-r_superresolution_mode=2 #"dlss" 🟩
-r_superresolution_nvidia_dlss_qualitymode=1 #"1,2,3, quality,balanced,performance" 🟩
+r_superresolution_mode=2 # "dlss" 🟩
+r_superresolution_nvidia_dlss_qualitymode=1 # "1,2,3, quality,balanced,performance" 🟩
 r_superresolution_sharpness=0 #0.5 🟩
 r_superresolution_texturemipbias=0 #0 "test 0.5,1"
 
@@ -423,12 +423,12 @@ e_decalsrange=20 #20
 #e_viewdistratiocustom=60 #60 "not used"
 #e_viewdistratiodetail=30 #30 "not used"
 #memstats=0 #0 "debug"
-#q_quality= #"sets all"
-#q_shadersky= #"not used"
+#q_quality= # "sets all"
+#q_shadersky= # "not used"
 #r_displayinfo=0 #0 "debug"
 #r_height=2160 #
 #r_profiler=0 #0 "debug"
-#r_shadowscache=0 #0 #
+#r_shadowscache=0 #0
 #r_shadowscacheresolutions= #
 #r_superresolution_amd_fsr_customresolutionscalewh=0.5 #0.5
 #r_superresolution_amd_fsr_qualitymode=0 #0
@@ -436,8 +436,8 @@ e_decalsrange=20 #20
 #r_texturesstreampoolsize=10240 #10240 "vram 5120,8192,10240, 8gb,12gb,16gb"
 #r_width=3840 #
 #r_xboximmediatethresholdpercent=5 #5
-#sys_pakpriority=2 # 2 "test"
-#sys_spec_full= #"sets all"
+#sys_pakpriority=2 #2 "test"
+#sys_spec_full= # "sets all"
 #sys_spec_textureresolution=9 #9 "vram 7,8,9, 8gb,12gb,16gb"
 #wh_cs_playerlockdisabled=0 #0
 #wh_player_deepwaterlevel=0.85 #0.85
