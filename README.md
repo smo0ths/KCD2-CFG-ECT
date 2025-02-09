@@ -1,3 +1,12 @@
+## updated 2/8/2025 v0.1.1c :ramen: e_timeofday=4.2
+
+#### wip ultra config i will be optimizing more
+
+#### mods ect under cfg
+
+---
+
+```python
 ## create user.cfg in kingdomcomedeliverance2 folder and copy paste
 ## delete cache folder %userprofile%/saved games/kingdomcome2/shaders (not needed, maybe after update)
 ## add launch commands: +exec user.cfg
@@ -436,3 +445,37 @@ e_decalsrange=20 #20
 #wh_ui_showcompass=1 #1
 #wh_ui_showhud=1 #1
 #wh_ui_showstats=1 #1
+```
+
+---
+
+## ect
+
+```python
+## enable rebar gives you ~3 fps (in nvidiaprofileinspector)
+
+## update dlss to latest and force preset k(0x0000000B) (in nvidiaprofileinspector)
+
+## keybinds
+accept/use                  - v
+combat free look            - l alt
+cycle tabs                  - i
+follow npc or focus camera  - mouse 3
+inventory                   - tab
+jump                        - space | mouse 4 (this is also dodge)
+lock on opponent            - c
+pat your dog or horse       - e
+quick chat with focus       - mouse 3
+special attack              - f | mouse 5 (kick in clinch/fistfight, mercy kill, tackle, stealth kill/takedown)
+toggle crouch               - l ctrl
+
+## game settings
+in-game chatter subtitles - no
+telemetry - no
+
+## mods
+more carry weight - ptf - max-63-1-1-1738734672.7z
+unlimited saving ii-14-1-0-1738700295.zip
+```
+
+---
