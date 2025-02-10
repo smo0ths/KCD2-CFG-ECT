@@ -1,4 +1,4 @@
-## updated 2/9/2025 v0.1.2a :ramen: e_timeofday=4.2
+## updated 2/9/2025 v0.1.2b :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -164,7 +164,7 @@ sys_flash_curve_tess_error=2 #2 "curve tessellation"
 r_superresolution_mode=2 # "dlss" 🟩
 r_superresolution_nvidia_dlss_qualitymode=1 # "1,2,3, quality,balanced,performance" 🟩
 r_superresolution_sharpness=0 #0.5 🟩
-r_superresolution_texturemipbias=0 #0 "test 0.5,1"
+r_superresolution_texturemipbias=0 #0 "test 1"
 
 ## antialiasing 2
 r_antialiasingmode=3 #3
