@@ -1,4 +1,4 @@
-## updated 2/9/2025 v0.1.2b :ramen: e_timeofday=4.2
+## updated 2/10/2025 v0.1.3 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -17,7 +17,7 @@
 ## console access
 con_restricted=0 #
 
-## custom cfg
+## custom sys cfg
 sys_spec=0 # 🟩
 
 ## sys cfg
@@ -48,7 +48,7 @@ q_shaderterrain=3 #
 q_shadervegetation=3 #
 q_shaderwater=3 #
 
-## custom sys 1
+## custom
 sys_budget_soundchannels=32 #32
 sys_budget_soundcpu=15 #15 "test 0, monitoring budget"
 sys_budget_streamingthroughput=1024 #1024 "test 3000, ram"
@@ -56,38 +56,82 @@ sys_budget_sysmem=512 #512 "test 0, ram, debug"
 sys_budget_videomem=90 #90 "test 0, vram, debug"
 sys_flash_address_space=65536 #65536 "test 131072, ram, require_app_restart"
 sys_flash_check_filemodtime=0 #0
-sys_maxfps=158 #-1 🟩
-sys_pakstreamcache=0 #0 "test 1, ram"
-sys_streaming_max_bandwidth=0 #0 "test 2000, vram"
-
-## custom sys 2
 sys_job_system_enable=1 #1
 sys_job_system_max_worker=8 #16 "test 0,8" 🟩
 sys_limit_phys_thread_count=1 #1 "limits p_num_threads to physical cpu count"
 sys_main_cpu=0 #0 "game thread"
+sys_maxfps=158 #-1 🟩
+sys_pakstreamcache=0 #0 "test 1, ram"
 sys_physics_cpu=2 #1 "test 2" 🟩
 sys_streaming_cpu=1 #1
-sys_streaming_cpu_worker=5 #5
-sys_taskthread0_cpu=3 #3
-sys_taskthread1_cpu=5 #5
-sys_taskthread2_cpu=4 #4
-sys_taskthread3_cpu=3 #3
-sys_taskthread4_cpu=2 #2
-sys_taskthread5_cpu=1 #1
+sys_streaming_cpu_worker=8 #5 "test" 🟩
+sys_streaming_max_bandwidth=0 #0 "test 2000, vram"
+sys_taskthread0_cpu=3 #3 "test" 🟩
+sys_taskthread1_cpu=4 #5 "test" 🟩
+sys_taskthread2_cpu=5 #4 "test" 🟩
+sys_taskthread3_cpu=6 #3 "test" 🟩
+sys_taskthread4_cpu=7 #2 "test" 🟩
+sys_taskthread5_cpu=8 #1 "test" 🟩
 
-## custom 3
-e_svoti_numstreamingthreads=2 #2 "test"
-p_num_threads=1 #1 "test, internal physics threads"
-r_waterupdatethread=5 #5
-
-## custom 4
+## miscellaneous
+ca_streamchr=1 #1 "character streaming"
+ca_usephysics=1 #1 "physics simulation"
+cl_fovblendtime=0.25 #1 "test" 🟩
+e_autoprecachecamerajumpdist=16 #16
+e_clouds=1 #1
+e_deformableobjects=1 #1 "deform physics"
+e_geomcachebuffersize=32 #32
+e_geomcachemaxplaybackfrommemorysize=0 #0
+e_mergedmeshesusespines=1 #1
+e_skipinfrustumoptimizationwh=0 #0
+e_skyquality=1 #1
 e_streamcgfpoolsize=1280 #1280 "test 512,1024,2048, ram, render mesh cache"
+e_svoti_numstreamingthreads=1 #2 "test 1" 🟩
+e_vegetation=1 #1
+g_battledust_enable=1 #1 "test 0"
+i_lighteffects=1 #1
 log_enableremoteconsole=0 #1 🟩
+p_num_threads=1 #1 "test, internal physics threads"
+r_colorbits=32 #32 "color resolution in bpp, require_app_restart"
+r_cubemapgenerationadditionalwaitframeswh=3 #3
+r_displayinfotargetdrawcalls=0 #0
+r_displayinfotargetpolygons=0 #0
+r_gamma=1 #1
+r_maxframelatency=1 #1 "test 0,2,3"
 r_multigpu=0 #1 🟩
+r_nohwgamma=0 #1 🟩
+r_reflections=0 #1 "not used" 🟩
+r_reflectionsquality=0 #3 "not used" 🟩
+r_refraction=1 #1
 r_rendertargetpoolsize=0 #0 "test 1024, vram"
+r_silhouettepom=0 #0
+r_sunshafts=2 #2
+r_thermalvision=0 #1 🟩
+r_transpdepthfixup=1 #1
+r_usehwskinning=1 #1 "gpu deformation of a vertices"
+r_usemateriallayers=2 #2 "material layers"
+r_usezpass=2 #2 "expensive materials"
 r_vsync=0 #1 🟩
+r_waterupdatethread=5 #5
+r_zfightingdepthscale=0.995 #0.995
+r_zfightingextrude=0.001 #0.001
+r_zpassdepthsorting=1 #1
+r_zprepassmaxdist=16 #16
+sys_physics=1 #1
+wh_ansel_enable=0 #1 🟩
+wh_horse_cameracentering=0 #0.2 "not a unknown command" 🟩
+wh_pl_showfirecursor=1 #0 🟩
+wh_ui_bubblesenabled=0 #1 🟩
+wh_ui_enablesubtitlespeakername=1 #0 🟩
+wh_ui_fps=0 #0
+wh_ui_holdcursorduration=0.1 #0.3 🟩
+wh_ui_pausegameonfocusloss=0 #0
+wh_ui_shownormalcursor=1 #1
+wh_ui_showvignette=0 #1 🟩
+wh_ui_subtitlesize=3 #0 🟩
 
 ## binds
+bind comma r_sharpening 0 # "for cutscenes"
 bind mwheel_down cl_fov 68
 bind mwheel_up cl_fov 25
 bind slash exec root/user.cfg
@@ -95,54 +139,27 @@ bind slash exec root/user.cfg
 ## mouse
 cl_sensitivity=10 # 🟩
 i_mouse_accel=0 #0
+i_mouse_sensitivity=1 #1
 i_mouse_smooth=0 #0
+wh_cl_sensitivityhorizontal=45 #45
+wh_cl_sensitivityvertical=45 #45
+wh_cs_playerinputmousesensitivity=0.05 #0.1 "test" 🟩
+wh_cs_playerinputmouseunlockmindistancetounlock=5 #15 "test" 🟩
+wh_cs_playerinputmouseunlockmintime=0 #0.15 "test" 🟩
+wh_cs_playerinputmouseunlockreturntime=0.15 #0.2 "test" 🟩
 
-## sound volumes
+## sound
 s_mastervolume=1 #1
-s_musicvolume=0.6 #1 🟩
-s_soundvolume=1 #1
-
-## field of views
-cl_fov=68 #63.0883 "68 is 100, 59 is 90, horizontal" 🟩
-pl_movement.power_sprint_targetfov=68 #55 "68 is 100, 59 is 90, horizontal" 🟩
-r_drawnearfov=68 #60 "68 is 100, 59 is 90, horizontal" 🟩
-
-## miscellaneous
-ca_streamchr=1 #1 "character streaming"
-ca_usephysics=1 #1 "physics simulation"
-e_autoprecachecamerajumpdist=16 #16
-e_clouds=1 #1
-e_deformableobjects=1 #1 "deform physics"
-e_geomcachebuffersize=32 #32
-e_geomcachemaxplaybackfrommemorysize=0 #0
-e_mergedmeshesusespines=1 #1
-e_skyquality=1 #1
-e_vegetation=1 #1
-g_battledust_enable=1 #1 "test 0"
-i_lighteffects=1 #1
-r_colorbits=32 #32 "color resolution in bpp, require_app_restart"
-r_displayinfotargetdrawcalls=0 #0
-r_displayinfotargetpolygons=0 #0
-r_reflections=0 #1 "not used" 🟩
-r_reflectionsquality=0 #3 "test 0,1,2,4, not used" 🟩
-r_refraction=1 #1
-r_silhouettepom=0 #0
-r_sunshafts=2 #2
-r_transpdepthfixup=1 #1
-r_usehwskinning=1 #1 "gpu deformation of a vertices"
-r_usemateriallayers=2 #2 "material layers"
-r_usezpass=2 #2 "expensive materials"
-r_zfightingdepthscale=0.995 #0.995
-r_zfightingextrude=0.001 #0.001
-r_zpassdepthsorting=1 #1
-r_zprepassmaxdist=16 #16
+s_musicvolume=0.7 #1 🟩
 s_occlusionmaxdistance=500 #500 "test 0"
-sys_physics=1 #1
-wh_pl_showfirecursor=1 #0 🟩
-wh_ui_bubblesenabled=0 #1 🟩
-wh_ui_enablesubtitlespeakername=1 #0 🟩
-wh_ui_shownormalcursor=1 #1
-wh_ui_subtitlesize=3 #0 🟩
+s_soundvolume=1 #1
+wh_snd_ignore_focus=1 #0 🟩
+
+## fovs
+cl_fov=67.6727 #63.0883 "100 horizontal" 🟩
+cl_hfov=100 #95 "100 horizontal" 🟩
+pl_movement.power_sprint_targetfov=67.6727 #55 "100 horizontal" 🟩
+r_drawnearfov=67.6727 #60 "100 horizontal" 🟩
 
 ## tessellation
 e_shadowstessellatecascades=1 #1
@@ -200,11 +217,17 @@ r_postprocesseffects=1 #1 "test 0,2, debug"
 r_postprocessfilters=1 #1
 r_postprocessgamefx=1 #1
 r_sharpening=0 #0
+r_ssrefldistance=0.15 #0.15
 r_ssreflections=2 #2
+r_ssreflenvbrdfmultwh=3 #3
+r_ssreflenvbrdfpowwh=2 #2
 r_ssreflhalfres=0 #0
+r_ssreflsamples=16 #16
 wh_cl_neardof=0 #1 🟩
 
 ## textures
+e_terraintexturelodratio=1 #1
+e_terraintexturestreamingpoolitemsnum=256 #256
 r_envcmresolution=2 #2 "environment cubemap"
 r_envtexresolution=3 #3 "2d target environment texture"
 r_flashdyntextureresquality=0 #0
@@ -212,6 +235,10 @@ r_texmaxanisotropy=16 #16 "require_level_reload"
 r_texminanisotropy=16 #16 "require_level_reload"
 r_texpreallocateatlases=0 #0
 r_textureloddistanceratio=-1 #-1
+r_texturesstreamdynamicpool=1 #1
+r_texturesstreamdynamicpoolmaxsizewh=8192 #8192
+r_texturesstreamdynamicpoolminsize=2048 #2048
+r_texturesstreamdynamicpooltargetvramusage=80 #80
 r_texturesstreaming=2 #2 "require_app_restart"
 r_texturesstreamingmaxrequestedmb=4 #4 "test 20,1024, vram"
 r_texturesstreamingminusablemips=8 #8 "test"
@@ -226,10 +253,10 @@ e_waterocean=0 #0
 e_wateroceanbottom=1 #1
 e_wateroceanfft=0 #0
 e_waterwaves=0 #0
-r_watercaustics=0 #1 "test 0, not used" 🟩
-r_watergodrays=0 #1 "test 0, not used" 🟩
-r_waterreflections=0 #1 "test 0, not used" 🟩
-r_waterreflectionsquality=0 #4 "test 0,1,2,3, not used" 🟩
+r_watercaustics=0 #1 "not used" 🟩
+r_watergodrays=0 #1 "not used" 🟩
+r_waterreflections=0 #1 "not used" 🟩
+r_waterreflectionsquality=0 #4 "not used" 🟩
 r_watervolumecaustics=0 #0
 r_watervolumecausticsdensity=128 #128 "test 256"
 r_watervolumecausticsmaxdist=35 #35
@@ -292,6 +319,7 @@ e_svoti_skycolormultiplier=-0.8001 #-0.8001 "test -0.2, overall lighting"
 e_svoti_specularamplifier=1 #1
 e_svoti_ssaoamount=1 #1 "test 1.5"
 e_svoti_vegetationmaxopacity=1 #1
+e_svoti_voxelizationlodratio=1 #1
 e_svoti_voxelizeunderterrain=1 #1 "test 0"
 e_svovoxelpoolresolution=128 #128
 e_svovoxgenres=512 #512
@@ -302,17 +330,19 @@ wh_e_hlodclusterswitchingdistancemin=150 #150
 wh_e_hlodclusterswitchingdistancemultiplier=0.5 #0.5
 wh_e_hlodinteriorswitchingdistance=12 #12
 wh_e_hlodvegetationswitchingdistances=8000 4000 2000 500
+wh_e_hlodviewdistratiooverride=254 #254
 
 ## cloth
 ca_clothblending=1 #1
 ca_clothbypasssimulation=0 #0
 ca_vclothmode=1 #1
-es_maxphysdistcloth=300 #300 "test 100"
+es_maxphysdistcloth=180 #300 "test 80,100,180" 🟩
 wh_ca_clothbudgetmaxframestoskip=1 #1
 
 ## particles
 e_particles=1 #1
 e_particlesgi=1 #1
+e_particleslightsviewdistratio=256 #256
 e_particleslod=1 #1
 e_particlesmaxscreenfill=180 #180
 e_particlesmindrawpixels=1 #1
@@ -330,6 +360,7 @@ wh_e_particlesviewdistmul=3 #3
 
 ## shadows
 e_gsmsizeswh=3,10,32,120,600
+e_lightshadowcastspecwh=4 #4
 e_objshadowcastspec=4 #4
 e_shadows=1 #1
 e_shadowsadaptscale=2.72 #2.72
@@ -337,12 +368,16 @@ e_shadowsblendcascades=1 #1
 e_shadowscastfadeoutratiolightswh=0.3 #0.3
 e_shadowscastviewdistratio=0.9 #0.9 "test"
 e_shadowscastviewdistratiolights=0.1 #0.1
+e_shadowscastviewdistratiomulinvis=0.3 #0.3
 e_shadowsclouds=1 #1
 e_shadowsmaxtexres=2048 #2048
 e_shadowsmaxtexressunwh=2048 #2048
 e_shadowsperobject=0 #0
 e_shadowspoolsize=8192 #8192
 e_shadowsresscale=2.8 #2.8
+e_shadowsupdateviewdistratio=100 #100
+e_terrainmeshinstancingshadowbias=0.5 #0.5
+e_terrainmeshinstancingshadowlodratio=0.3 #0.3
 r_drawnearshadows=1 #1
 r_shadowcastinglightsmaxcount=24 #24
 r_shadowspcfiltering=1 #1
@@ -352,66 +387,75 @@ r_shadowsscreenspace=1 #1
 r_deferredshading3pl=0 #3 "test, three point lighting" 🟩
 r_deferredshadingarealights=1 #1
 r_deferredshadingfiltergbuffer=0 #0 "test 1"
+r_deferredshadinglightlodratio=1 #1
 r_deferredshadingsss=1 #1
 r_deferredshadingtiled=3 #3
 r_deferredshadingtiledhairquality=2 #2
 
-## lods 1
+## lods
 ca_attachmentcullingration=1000 #1000
 ca_facialanimationradius=30 #30
+e_charlodmin=0 #0
+e_coveragebufferoccludersviewdistratio=1 #1
+e_coveragebufferterrainexpand=0.025 #0.025 "axisaligned bounding box z to avoid flat terrain flickering"
+e_cullvegactivation=50 #50
+e_foliagewindactivationdist=25 #25
 e_lodcompmaxsize=6 #6 "test"
 e_lodfaceareatargetsize=0.0012 #0.0012 "test 0.0006"
+e_lodfaceareatargetsizevegetationmult=1 #1
+e_lodmax=5 #5
+e_lodmin=0 #0
+e_lodminttris=300 #300
 e_lodratio=60 #60 "test 70"
+e_maxviewdistance=-1 #-1
+e_maxviewdistspeclerp=1 #1
+e_mergedmeshescullinglodratiowh=0.7 #0.7
+e_mergedmeshesdissolverangewh=20 #20
 e_mergedmeshesinstancedist=24 #24 "test 16,32"
 e_mergedmesheslodratio=30 #30 "test 16,8"
+e_mergedmeshesusedissolvewh=1 #1
 e_mergedmeshesviewdistratio=140 #140 "test 100"
+e_objquality=4 #4 "test 3"
 e_occlusioncullingviewdistratio=1 #1
+e_occlusionvolumesviewdistratio=0.05 #0.05
+e_physproxytrilimit=5000 #5000 "test 1000"
+e_recursionviewdistratio=0.1 #0.1
+e_statobjmergemaxtrisperdrawcall=500 #500
 e_streaminstancesminloadednodes=128 #128 "test 64"
+e_sunanglesnapminlodwh=2 #2
+e_terraindetailmaterialsviewdistxy=35 #35
 e_terraindetailmaterialsviewdistz=80 #80 "test 100,120"
 e_terrainocclusioncullingmaxdist=200 #200
+e_vegetationminsize=0 #0
+e_vegetationuseterraincolor=1 #1
+e_vegetationuseterraincolordistance=250 #250
 e_viewdistmin=5 #5 "test 10"
 e_viewdistratio=140 #140 "test 125,150"
+e_viewdistratiointeriorreflexlights=0.9 #0.9
+e_viewdistratiolargeenvcubemap=0.5 #0.5
+e_viewdistratiolights=24 #24
+e_viewdistratiomodifiergamedecals=4 #4
+e_viewdistratiosmallenvcubemap=1.5 #1.5
 e_viewdistratiovegetation=140 #140 "test 65,100,125,150"
-r_detaildistance=6 #6 "test 1 threw 20, perpixel detail layers blending"
-wh_ai_lod_maxcountdetail=80 #80
-wh_ai_lod_maxcountlod=400 #400
-wh_ai_lod_maxdetaildistance=180 #180
-wh_ca_geometricmeanoverride=0.0004 #0.0004
-wh_e_viewdistratioroad=130 #130
-wh_item_viewdistratio=100 #100
-
-## lods 2
-e_physproxytrilimit=5000 #5000 "test 1000"
 es_debrislifetimescale=1 #1
 es_maxphysdist=100 #100
 g_tree_cut_reuse_dist=0 #0 "test 0.35"
 p_cull_distance=100 #100
 p_num_bodies_large_group=100 #100 "test 10"
-
-## lods 3
-e_charlodmin=0 #0
-e_coveragebufferterrainexpand=0.025 #0.025 "axisaligned bounding box z to avoid flat terrain flickering"
-e_cullvegactivation=50 #50
-e_foliagewindactivationdist=25 #25
-e_lodfaceareatargetsizevegetationmult=1 #1
-e_lodmax=5 #5
-e_lodmin=0 #0
-e_lodminttris=300 #300
-e_maxviewdistance=-1 #-1
-e_maxviewdistspeclerp=1 #1
-e_mergedmeshescullinglodratiowh=0.7 #0.7
-e_mergedmeshesdissolverangewh=20 #20
-e_mergedmeshesusedissolvewh=1 #1
-e_objquality=4 #4 "test 3"
-e_statobjmergemaxtrisperdrawcall=500 #500
-e_terraindetailmaterialsviewdistxy=35 #35
-e_vegetationminsize=0 #0
-e_vegetationuseterraincolor=1 #1
-e_vegetationuseterraincolordistance=250 #250
-e_viewdistratiointeriorreflexlights=0.9 #0.9
-e_viewdistratiolights=24 #24
+r_detaildistance=6 #6 "test 1 threw 20, perpixel detail layers blending"
 r_drawnearzrange=0.12 #0.12 "test"
+wh_ai_lod_maxcountdetail=80 #80
+wh_ai_lod_maxcountlod=400 #400
+wh_ai_lod_maxdetaildistance=180 #180
+wh_ai_lod_maxnonmldistance=600 #600
+wh_ai_lod_maxnonmldistancehysteresismultiplier=1.2 #1.2
 wh_ai_npcupdatebudgetlowerbound=3.5 #3.5
+wh_ca_geometricmeanoverride=0.0004 #0.0004
+wh_cc_uberlodloaddistratio=1.1 #1.1 "test"
+wh_dlg_lodratio=60 #60
+wh_e_viewdistratioroad=130 #130
+wh_item_viewdistratio=100 #100
+wh_pl_nearz=0.05 #0.05 "test"
 
 ## rain
 r_rain=2 #2
@@ -420,6 +464,7 @@ r_raindistmultiplier=2 #2 "test 2.5"
 r_raindropseffect=1 #1
 r_rainmaxviewdist_deferred=150 #150 "test 170"
 r_rainoccludersizetreshold=10 #10
+r_rainpuddlewindspeedwh=0.2 #0.2
 wh_env_dirtcreationspeed=0.05 #0.05
 wh_env_dirtdryupspeed=0.05 #0.05
 wh_env_puddlecreationdelay=25 #25
@@ -443,13 +488,14 @@ e_decalsoverlapping=1 #1
 e_decalsplacementtestareasize=0.08 #0.08
 e_decalsrange=20 #20
 
-## etcetera, unused
+## etcetera
 #con_display_last_messages=0 #
 #con_line_buffer_size=1000 #1000
 #e_dynamiclights=1 #1
 #e_particlesmotionblur= #
 #e_viewdistratiocustom=60 #60 "not used"
 #e_viewdistratiodetail=30 #30 "not used"
+#e_viewdistratioportals=60 #60
 #memstats=0 #0 "debug"
 #q_quality= # "sets all"
 #q_shadersky= # "not used"
@@ -467,7 +513,10 @@ e_decalsrange=20 #20
 #r_xboximmediatethresholdpercent=5 #5
 #sys_pakpriority=2 #2 "test"
 #sys_spec_full= # "sets all"
+#sys_spec_physics= # "not used"
+#sys_spec_sound= # "not used"
 #sys_spec_textureresolution=9 #9 "vram 7,8,9, 8gb,12gb,16gb"
+#sys_spec_water= # "not used"
 #wh_cs_playerlockdisabled=0 #0
 #wh_player_deepwaterlevel=0.85 #0.85
 #wh_sys_nosavepotion=0 #0
