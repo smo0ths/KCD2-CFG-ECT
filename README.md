@@ -1,4 +1,4 @@
-## updated 2/10/2025 v0.1.3 :ramen: e_timeofday=4.2
+## updated 2/11/2025 v0.1.3a :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -132,12 +132,12 @@ wh_ui_subtitlesize=3 #0 🟩
 
 ## binds
 bind comma r_sharpening 0 # "for cutscenes"
-bind mwheel_down cl_fov 68
-bind mwheel_up cl_fov 25
+bind mwheel_down cl_hfov 100
+bind mwheel_up cl_hfov 45
 bind slash exec root/user.cfg
 
 ## mouse
-cl_sensitivity=10 # 🟩
+cl_sensitivity=9 # 🟩
 i_mouse_accel=0 #0
 i_mouse_sensitivity=1 #1
 i_mouse_smooth=0 #0
