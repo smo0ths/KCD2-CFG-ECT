@@ -1,4 +1,4 @@
-## updated 2/11/2025 v0.1.4 :ramen: e_timeofday=4.2
+## updated 2/11/2025 v0.1.5 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -328,7 +328,7 @@ wh_e_hlodclusterswitchingdistancemin=150 #150
 wh_e_hlodclusterswitchingdistancemultiplier=0.5 #0.5
 wh_e_hlodinteriorswitchingdistance=12 #12
 wh_e_hlodusedissolve=1 #1
-wh_e_hlodvegetationswitchingdistances=8000 4000 2000 500
+wh_e_hlodvegetationswitchingdistances=8000 4000 2000 500 #8000 4000 2000 500
 wh_e_hlodviewdistratiooverride=254 #254
 
 ## cloth
@@ -358,7 +358,7 @@ r_particlessoftisec=1 #1
 wh_e_particlesviewdistmul=3 #3
 
 ## shadows
-e_gsmsizeswh=3,10,32,120,600
+e_gsmsizeswh=3,10,32,120,600 #3,10,32,120,600
 e_lightshadowcastspecwh=4 #4
 e_objshadowcastspec=4 #4
 e_shadows=1 #1
@@ -382,8 +382,20 @@ r_shadowcastinglightsmaxcount=24 #24
 r_shadowspcfiltering=1 #1
 r_shadowsscreenspace=1 #1
 
+# three point lighting
+r_3plaverageilluminanceattenuationmin=0.0015 #0.0015
+r_3plaverageilluminancemultiplier=0.4 #0.4
+r_3plfalloffbegin=0.0001 #0.0001
+r_3plfalloffend=0.0015 #0.0015
+r_3plfilldirstr=0,-5,-125 #0,-5,-125
+r_3plgradientangle=0 #0
+r_3plgradientend=0.4 #0.4
+r_3plkeydirstr=0,0,125 #0,0,90 🟩
+r_3plmaxrelativeilluminanceratio=1 #3
+r_3plrimdirstr=0,15,-55 #0,15,-55
+r_deferredshading3pl=3 #3 "test, three point lighting"
+
 ## deferred shading
-r_deferredshading3pl=0 #3 "test, three point lighting" 🟩
 r_deferredshadingarealights=1 #1
 r_deferredshadingfiltergbuffer=0 #0 "test 1"
 r_deferredshadinglightlodratio=1 #1
