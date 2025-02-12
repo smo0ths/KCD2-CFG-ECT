@@ -1,4 +1,4 @@
-## updated 2/12/2025 v0.1.6 :ramen: e_timeofday=4.2
+## updated 2/12/2025 v0.2.0 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -72,6 +72,17 @@ sys_taskthread3_cpu=6 #3 "test" 🟩
 sys_taskthread4_cpu=7 #2 "test" 🟩
 sys_taskthread5_cpu=8 #1 "test" 🟩
 
+## binds
+#bind semicolon
+#bind apostrophe
+bind comma r_sharpening 0 # "for cutscenes"
+bind lbracket e_svoti_skycolormultiplier -0.8001 #-0.8001 "use at day"
+bind mwheel_down cl_hfov 100 #
+bind mwheel_up cl_hfov 45 #
+bind period s_musicvolume 0 #
+bind rbracket e_svoti_skycolormultiplier 8.0001 #-0.8001 "use at night"
+bind slash exec root/user.cfg #
+
 ## miscellaneous
 ca_streamchr=1 #1 "character streaming"
 ca_usephysics=1 #1 "physics simulation"
@@ -126,13 +137,6 @@ wh_ui_pausegameonfocusloss=0 #0
 wh_ui_shownormalcursor=1 #1
 wh_ui_showvignette=0 #1 🟩
 wh_ui_subtitlesize=3 #0 🟩
-
-## binds
-bind comma r_sharpening 0 # "for cutscenes"
-bind mwheel_down cl_hfov 100 #
-bind mwheel_up cl_hfov 45 #
-bind period s_musicvolume 0 #
-bind slash exec root/user.cfg #
 
 ## mouse
 cl_sensitivity=9 # 🟩
@@ -303,7 +307,7 @@ e_svoti_integrationmode=1 #1 "diffuse gi"
 e_svoti_lowspecmode=1 #1 "test 2,3,4"
 e_svoti_minvoxelopacity=0.01 #0.01
 e_svoti_numberofbounces=2 #2
-e_svoti_reflect_vox_max=500 #500
+e_svoti_reflect_vox_max=1 #500 "test 1" 🟩
 e_svoti_rsmconemaxlength=6 #6
 e_svoti_saturation=1 #1
 e_svoti_skipnongilights=0 #0
@@ -354,7 +358,7 @@ wh_e_particlesviewdistmul=3 #3
 
 ## shadows
 e_gsmsizeswh=3,10,32,120,600
-#3,10,32,120,600 "test, no comment"
+#3,10,32,120,600 "test 2,8,32,120,600, no comment"
 e_lightshadowcastspecwh=4 #4
 e_objshadowcastspec=4 #4
 e_shadows=1 #1
@@ -383,16 +387,16 @@ r_3plaverageilluminanceattenuationmin=0.0015 #0.0015
 r_3plaverageilluminancemultiplier=0.4 #0.4
 r_3plfalloffbegin=0.0001 #0.0001
 r_3plfalloffend=0.0015 #0.0015
-r_3plfilldirstr=0,-5,-125
-#0,-5,-125 "no comment"
 r_3plgradientangle=0 #0
 r_3plgradientend=0.4 #0.4
-r_3plkeydirstr=0,0,125
-#0,0,90 "no comment" 🟩
 r_3plmaxrelativeilluminanceratio=1 #3
-r_3plrimdirstr=0,15,-55
-#0,15,-55 "no comment"
 r_deferredshading3pl=3 #3 "test, three point lighting"
+r_3plfilldirstr=0 -5 -125
+#0 -5 -125 "no comment"
+r_3plkeydirstr=0 0 -125
+#0 0 90 "fix, no comment" 🟩
+r_3plrimdirstr=0 15 -55
+#0 15 -55 "no comment"
 
 ## deferred shading
 r_deferredshadingarealights=1 #1
