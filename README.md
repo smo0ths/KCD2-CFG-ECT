@@ -1,4 +1,4 @@
-## updated 2/12/2025 v0.2.0 :ramen: e_timeofday=4.2
+## updated 2/12/2025 v0.2.1 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -104,6 +104,7 @@ log_enableremoteconsole=0 #1 🟩
 p_num_threads=1 #1 "test, internal physics threads"
 r_colorbits=32 #32 "color resolution in bpp, require_app_restart"
 r_cubemapgenerationadditionalwaitframeswh=3 #3
+r_detailtextures=0 #1 "test, texture overlays, not used" 🟩
 r_displayinfotargetdrawcalls=0 #0
 r_displayinfotargetpolygons=0 #0
 r_gamma=1 #1
@@ -199,6 +200,7 @@ r_supersamplingfilter=0 #0
 g_radialblur=0 #1 🟩
 r_chromaticaberration=0 #0
 r_colorgrading=1 #1
+r_colorgradingchartscache=0 #0 "test 1,4"
 r_depthoffield=0 #2 🟩
 r_depthoffieldbokehquality=0 #0
 r_depthoffieldmode=1 #1 "gatherbased dof"
@@ -219,6 +221,8 @@ r_motionblurshutterspeed=200 ##200
 r_postprocesseffects=1 #1 "test 0,2, debug"
 r_postprocessfilters=1 #1 "test 0"
 r_postprocessgamefx=1 #1
+r_postprocesshud3d=0 #1 "not used" 🟩
+r_postprocesshud3dcache=0 #0
 r_sharpening=0 #0
 r_ssrefldistance=0.15 #0.15
 r_ssreflections=2 #2
@@ -391,12 +395,12 @@ r_3plgradientangle=0 #0
 r_3plgradientend=0.4 #0.4
 r_3plmaxrelativeilluminanceratio=1 #3
 r_deferredshading3pl=3 #3 "test, three point lighting"
-r_3plfilldirstr=0 -5 -125
-#0 -5 -125 "no comment"
-r_3plkeydirstr=0 0 -125
-#0 0 90 "fix, no comment" 🟩
-r_3plrimdirstr=0 15 -55
-#0 15 -55 "no comment"
+r_3plfilldirstr=0,-5,-125
+#0,-5,-125 "no comment"
+r_3plkeydirstr=0,0,-125
+#0,0,90 "fix, no comment" 🟩
+r_3plrimdirstr=0,15,-55
+#0,15,-55 "no comment"
 
 ## deferred shading
 r_deferredshadingarealights=1 #1
@@ -445,14 +449,17 @@ e_terrainocclusioncullingmaxdist=200 #200
 e_vegetationminsize=0 #0
 e_vegetationuseterraincolor=1 #1
 e_vegetationuseterraincolordistance=250 #250
-e_viewdistmin=5 #5 "test 10"
-e_viewdistratio=140 #140 "test 125,150"
+e_viewdistmin=0 #5 🟩
+e_viewdistratio=140 #140 "test 1,80,150"
+e_viewdistratiocustom=60 #60 "test, marked players,ai,vehicles"
+e_viewdistratiodetail=0 #30 "test, not used" 🟩
 e_viewdistratiointeriorreflexlights=0.9 #0.9
 e_viewdistratiolargeenvcubemap=0.5 #0.5
 e_viewdistratiolights=24 #24
-e_viewdistratiomodifiergamedecals=4 #4
+e_viewdistratiomodifiergamedecals=1 #4 🟩
+e_viewdistratioportals=0 #60 "test, not used" 🟩
 e_viewdistratiosmallenvcubemap=1.5 #1.5
-e_viewdistratiovegetation=140 #140 "test 65,100,125,150"
+e_viewdistratiovegetation=140 #140 "test 1,40,80,150"
 es_debrislifetimescale=1 #1
 es_maxphysdist=100 #100
 g_tree_cut_reuse_dist=0 #0 "test 0.35"
@@ -497,7 +504,7 @@ wh_env_rainwindstrength=30 #30
 
 ## decals
 ca_usedecals=0 #0 "character decals"
-e_decalsallowgamedecals=1 #1
+e_decalsallowgamedecals=0 #1 "test, not used" 🟩
 e_decalsforcedeferred=0 #0
 e_decalslifetimescale=2 #2
 e_decalsoverlapping=1 #1
@@ -517,9 +524,6 @@ r_waterreflectionsquality=0 #4 "not used" 🟩
 #con_line_buffer_size=1000 #1000
 #e_dynamiclights=1 #1
 #e_particlesmotionblur= #
-#e_viewdistratiocustom=60 #60 "not used"
-#e_viewdistratiodetail=30 #30 "not used"
-#e_viewdistratioportals=60 #60
 #memstats=0 #0 "debug"
 #q_quality= # "sets all"
 #q_shadersky= # "not used"
