@@ -1,4 +1,4 @@
-## updated 2/12/2025 v0.2.1 :ramen: e_timeofday=4.2
+## updated 2/12/2025 v0.2.2 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -224,12 +224,12 @@ r_postprocessgamefx=1 #1
 r_postprocesshud3d=0 #1 "not used" 🟩
 r_postprocesshud3dcache=0 #0
 r_sharpening=0 #0
-r_ssrefldistance=0.15 #0.15
+r_ssrefldistance=0.05 #0.15 "better ssr" 🟩
 r_ssreflections=2 #2
 r_ssreflenvbrdfmultwh=3 #3
 r_ssreflenvbrdfpowwh=2 #2
-r_ssreflhalfres=0 #0
-r_ssreflsamples=16 #16
+r_ssreflhalfres=1 #0  🟩
+r_ssreflsamples=16 #16 "test 32"
 wh_cl_neardof=0 #1 🟩
 
 ## textures
