@@ -534,6 +534,7 @@ e_decalsrange=20 #20
 #sys_pakpriority=2 #2 "test"
 #sys_spec_full= # "sets all"
 #sys_spec_physics= # "not used"
+#sys_spec_quality= # "sets all"
 #sys_spec_sound= # "not used"
 #sys_spec_textureresolution=9 #9 "vram 7,8,9, 8gb,12gb,16gb"
 #sys_spec_water= # "not used"
