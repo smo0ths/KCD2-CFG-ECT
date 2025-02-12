@@ -1,4 +1,4 @@
-## updated 2/12/2025 v0.1.5b :ramen: e_timeofday=4.2
+## updated 2/12/2025 v0.1.6 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -99,8 +99,6 @@ r_gamma=1 #1
 r_maxframelatency=1 #1 "test 0,2,3"
 r_multigpu=0 #1 🟩
 r_nohwgamma=0 #1 🟩
-r_reflections=0 #1 "not used" 🟩
-r_reflectionsquality=0 #3 "not used" 🟩
 r_refraction=1 #1
 r_rendertargetpoolsize=0 #0 "test 1024, vram"
 r_silhouettepom=0 #0
@@ -131,9 +129,10 @@ wh_ui_subtitlesize=3 #0 🟩
 
 ## binds
 bind comma r_sharpening 0 # "for cutscenes"
-bind mwheel_down cl_hfov 100
-bind mwheel_up cl_hfov 45
-bind slash exec root/user.cfg
+bind mwheel_down cl_hfov 100 #
+bind mwheel_up cl_hfov 45 #
+bind period s_musicvolume 0 #
+bind slash exec root/user.cfg #
 
 ## mouse
 cl_sensitivity=9 # 🟩
@@ -247,13 +246,9 @@ wh_r_texturesstreamingscheduletimelimitus=3000 #3000
 
 ## water
 e_waterocean=0 #0
-e_wateroceanbottom=0 #1 "" 🟩
+e_wateroceanbottom=0 #1 🟩
 e_wateroceanfft=0 #0
 e_waterwaves=0 #0
-r_watercaustics=0 #1 "not used" 🟩
-r_watergodrays=0 #1 "not used" 🟩
-r_waterreflections=0 #1 "not used" 🟩
-r_waterreflectionsquality=0 #4 "not used" 🟩
 r_watervolumecaustics=0 #0
 r_watervolumecausticsdensity=128 #128 "test 256"
 r_watervolumecausticsmaxdist=35 #35
@@ -327,8 +322,8 @@ wh_e_hlodclusterswitchingdistancemin=150 #150
 wh_e_hlodclusterswitchingdistancemultiplier=0.5 #0.5
 wh_e_hlodinteriorswitchingdistance=12 #12
 wh_e_hlodusedissolve=1 #1
-wh_e_hlodvegetationswitchingdistances=8000,4000,2000,500
-#8000,4000,2000,500
+wh_e_hlodvegetationswitchingdistances=8000 4000 2000 500
+#8000,4000,2000,500 "test, no comment"
 wh_e_hlodviewdistratiooverride=254 #254
 
 ## cloth
@@ -359,7 +354,7 @@ wh_e_particlesviewdistmul=3 #3
 
 ## shadows
 e_gsmsizeswh=3,10,32,120,600
-#3,10,32,120,600
+#3,10,32,120,600 "test, no comment"
 e_lightshadowcastspecwh=4 #4
 e_objshadowcastspec=4 #4
 e_shadows=1 #1
@@ -389,14 +384,14 @@ r_3plaverageilluminancemultiplier=0.4 #0.4
 r_3plfalloffbegin=0.0001 #0.0001
 r_3plfalloffend=0.0015 #0.0015
 r_3plfilldirstr=0,-5,-125
-#0,-5,-125
+#0,-5,-125 "no comment"
 r_3plgradientangle=0 #0
 r_3plgradientend=0.4 #0.4
 r_3plkeydirstr=0,0,125
-#0,0,90 🟩
+#0,0,90 "no comment" 🟩
 r_3plmaxrelativeilluminanceratio=1 #3
 r_3plrimdirstr=0,15,-55
-#0,15,-55
+#0,15,-55 "no comment"
 r_deferredshading3pl=3 #3 "test, three point lighting"
 
 ## deferred shading
@@ -504,6 +499,14 @@ e_decalslifetimescale=2 #2
 e_decalsoverlapping=1 #1
 e_decalsplacementtestareasize=0.08 #0.08
 e_decalsrange=20 #20
+
+## test
+r_reflections=0 #1 "not used" 🟩
+r_reflectionsquality=0 #3 "not used" 🟩
+r_watercaustics=0 #1 "not used" 🟩
+r_watergodrays=0 #1 "not used" 🟩
+r_waterreflections=0 #1 "not used" 🟩
+r_waterreflectionsquality=0 #4 "not used" 🟩
 
 ## etcetera
 #con_display_last_messages=0 #
