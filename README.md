@@ -1,4 +1,4 @@
-## updated 2/12/2025 v0.2.2 :ramen: e_timeofday=4.2
+## updated 2/12/2025 v0.2.3 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -55,22 +55,27 @@ sys_budget_sysmem=512 #512 "test 0, ram, debug"
 sys_budget_videomem=90 #90 "test 0, vram, debug"
 sys_flash_address_space=65536 #65536 "test 131072, ram, require_app_restart"
 sys_flash_check_filemodtime=0 #0
+sys_maxfps=158 #-1 🟩
+sys_pakstreamcache=0 #0 "test 1, ram"
+sys_streaming_max_bandwidth=0 #0 "test 2000, vram"
+
+## cpu test
+e_svoti_numstreamingthreads=1 #2 "test 1" 🟩
+p_num_threads=1 #1 "test, internal physics threads"
+r_waterupdatethread=5 #5
 sys_job_system_enable=1 #1
 sys_job_system_max_worker=8 #16 "test 0,8" 🟩
 sys_limit_phys_thread_count=1 #1 "limits p_num_threads to physical cpu count"
 sys_main_cpu=0 #0 "game thread"
-sys_maxfps=158 #-1 🟩
-sys_pakstreamcache=0 #0 "test 1, ram"
 sys_physics_cpu=2 #1 "test 2" 🟩
 sys_streaming_cpu=1 #1
 sys_streaming_cpu_worker=8 #5 "test" 🟩
-sys_streaming_max_bandwidth=0 #0 "test 2000, vram"
 sys_taskthread0_cpu=3 #3
 sys_taskthread1_cpu=4 #5 "test" 🟩
 sys_taskthread2_cpu=5 #4 "test" 🟩
-sys_taskthread3_cpu=6 #3 "test" 🟩
-sys_taskthread4_cpu=7 #2 "test" 🟩
-sys_taskthread5_cpu=8 #1 "test" 🟩
+sys_taskthread3_cpu=3 #3
+sys_taskthread4_cpu=6 #2 "test" 🟩
+sys_taskthread5_cpu=7 #1 "test" 🟩
 
 ## binds
 #bind semicolon
@@ -96,12 +101,10 @@ e_mergedmeshesusespines=1 #1
 e_skipinfrustumoptimizationwh=0 #0
 e_skyquality=1 #1
 e_streamcgfpoolsize=1280 #1280 "test 512,1024,2048, ram, render mesh cache"
-e_svoti_numstreamingthreads=1 #2 "test 1" 🟩
 e_vegetation=1 #1
 g_battledust_enable=1 #1 "test 0"
 i_lighteffects=1 #1
 log_enableremoteconsole=0 #1 🟩
-p_num_threads=1 #1 "test, internal physics threads"
 r_colorbits=32 #32 "color resolution in bpp, require_app_restart"
 r_cubemapgenerationadditionalwaitframeswh=3 #3
 r_detailtextures=0 #1 "test, texture overlays, not used" 🟩
@@ -121,7 +124,6 @@ r_usehwskinning=1 #1 "gpu deformation of a vertices"
 r_usemateriallayers=2 #2 "material layers"
 r_usezpass=2 #2 "expensive materials"
 r_vsync=0 #1 🟩
-r_waterupdatethread=5 #5
 r_zfightingdepthscale=0.995 #0.995
 r_zfightingextrude=0.001 #0.001
 r_zpassdepthsorting=1 #1
@@ -395,19 +397,19 @@ r_3plgradientangle=0 #0
 r_3plgradientend=0.4 #0.4
 r_3plmaxrelativeilluminanceratio=1 #3
 r_deferredshading3pl=3 #3 "test, three point lighting"
-r_3plfilldirstr=0,-5,-125
-#0,-5,-125 "no comment"
-r_3plkeydirstr=0,0,-125
+r_3plfilldirstr=0 -5 -125
+#0,-5,-125 "fix, no comment"
+r_3plkeydirstr=0 0 -125
 #0,0,90 "fix, no comment" 🟩
-r_3plrimdirstr=0,15,-55
-#0,15,-55 "no comment"
+r_3plrimdirstr=0 15 -55
+#0,15,-55 "fix, no comment"
 
 ## deferred shading
 r_deferredshadingarealights=1 #1
 r_deferredshadingfiltergbuffer=0 #0 "test 1"
 r_deferredshadinglightlodratio=1 #1
 r_deferredshadingsss=1 #1
-r_deferredshadingtiled=3 #3
+r_deferredshadingtiled=2 #3 "without debug info" 🟩
 r_deferredshadingtiledhairquality=2 #2
 
 ## lods
