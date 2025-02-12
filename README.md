@@ -1,4 +1,4 @@
-## updated 2/11/2025 v0.1.5a :ramen: e_timeofday=4.2
+## updated 2/12/2025 v0.1.5b :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -27,7 +27,6 @@ sys_spec_light=4 #
 sys_spec_objectdetail=4 #
 sys_spec_particles=4 #
 sys_spec_postprocessing=4 #
-sys_spec_quality=4 #
 sys_spec_shading=4 #
 sys_spec_shadows=4 #
 sys_spec_texture=4 #
