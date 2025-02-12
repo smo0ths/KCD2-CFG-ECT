@@ -558,6 +558,8 @@ r_waterreflectionsquality=0 #4 "not used" 🟩
 
 ## update dlss to latest and force preset k(0x0000000B) (in nvidiaprofileinspector)
 
+## use windows auto HDR (RTX HDR doesn't work) if you are using HDR obviously, it does the trick
+
 ## keybinds
 accept/use                  - v
 combat free look            - l alt
