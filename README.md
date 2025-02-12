@@ -323,7 +323,7 @@ wh_e_hlodclusterswitchingdistancemultiplier=0.5 #0.5
 wh_e_hlodinteriorswitchingdistance=12 #12
 wh_e_hlodusedissolve=1 #1
 wh_e_hlodvegetationswitchingdistances=8000 4000 2000 500
-#8000,4000,2000,500 "test, no comment"
+#8000 4000 2000 500 "test, no comment"
 wh_e_hlodviewdistratiooverride=254 #254
 
 ## cloth
