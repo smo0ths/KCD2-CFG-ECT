@@ -362,7 +362,7 @@ gpu_particle_physics=1 #0 "test 1, require_app_restart" 🟩
 r_particleshalfres=0 #0
 r_particlesrefraction=1 #1
 r_particlessoftisec=1 #1
-wh_e_particlesviewdistmul=3 #3 "test 2"
+wh_e_particlesviewdistmul=2 #3 "test 2" 🟩
 
 ## shadows
 e_gsmsizeswh=3,10,32,120,600
