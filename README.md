@@ -1,4 +1,4 @@
-## updated 2/12/2025 v0.2.3 :ramen: e_timeofday=4.2
+## updated 2/13/2025 v0.2.5 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -8,9 +8,8 @@
 
 ```python
 ## create user.cfg in kingdomcomedeliverance2 folder and copy paste
+## add launch command: +exec user.cfg (needed for binds to be read ect, -devmode not needed only for debug/dev tools)
 ## delete cache folder %userprofile%/saved games/kingdomcome2/shaders (not needed, maybe after update)
-## add launch commands: +exec user.cfg
-## "-devmode" is for debug/dev tools so its not needed
 ## and restart after getting to main menu (needed depending on cvar)
 ## 🟩 shows changes from default ultra
 
@@ -48,11 +47,6 @@ q_shadervegetation=3 #
 q_shaderwater=3 #
 
 ## custom
-sys_budget_soundchannels=32 #32
-sys_budget_soundcpu=15 #15 "test 0, monitoring budget"
-sys_budget_streamingthroughput=1024 #1024 "test 3000, ram"
-sys_budget_sysmem=512 #512 "test 0, ram, debug"
-sys_budget_videomem=90 #90 "test 0, vram, debug"
 sys_flash_address_space=65536 #65536 "test 131072, ram, require_app_restart"
 sys_flash_check_filemodtime=0 #0
 sys_maxfps=158 #-1 🟩
@@ -78,8 +72,8 @@ sys_taskthread4_cpu=6 #2 "test" 🟩
 sys_taskthread5_cpu=7 #1 "test" 🟩
 
 ## binds
-#bind semicolon
 #bind apostrophe
+#bind semicolon
 bind comma r_sharpening 0 # "for cutscenes"
 bind lbracket e_svoti_skycolormultiplier -0.8001 #-0.8001 "use at day"
 bind mwheel_down cl_hfov 100 #
@@ -105,15 +99,17 @@ e_vegetation=1 #1
 g_battledust_enable=1 #1 "test 0"
 i_lighteffects=1 #1
 log_enableremoteconsole=0 #1 🟩
+r_brightness=0.49 #0.5 🟩
 r_colorbits=32 #32 "color resolution in bpp, require_app_restart"
+r_contrast=0.51 #0.5 🟩
 r_cubemapgenerationadditionalwaitframeswh=3 #3
 r_detailtextures=0 #1 "test, texture overlays, not used" 🟩
-r_displayinfotargetdrawcalls=0 #0
-r_displayinfotargetpolygons=0 #0
 r_gamma=1 #1
 r_maxframelatency=1 #1 "test 0,2,3"
 r_multigpu=0 #1 🟩
 r_nohwgamma=0 #1 🟩
+r_reflections=0 #1 "not used" 🟩
+r_reflectionsquality=0 #3 "not used" 🟩
 r_refraction=1 #1
 r_rendertargetpoolsize=0 #0 "test 1024, vram"
 r_silhouettepom=0 #0
@@ -213,7 +209,7 @@ r_hdrbloomquality=2 #2
 r_hdreyeadaptationmode=1 #1
 r_hdreyeadaptationspeed=3 #3
 r_hdrgrainamount=0 #1 🟩
-r_hdrrangeadapt=0 #0
+r_hdrrangeadapt=1 #0 "test" 🟩
 r_hdrtexformat=1 #1
 r_hdrvignetting=0 #1 🟩
 r_motionblur=0 #2 "1,2, camera,camera and object" 🟩
@@ -259,12 +255,17 @@ e_waterocean=0 #0
 e_wateroceanbottom=0 #1 🟩
 e_wateroceanfft=0 #0
 e_waterwaves=0 #0
+r_watercaustics=0 #1 "not used" 🟩
+r_watergodrays=0 #1 "not used" 🟩
+r_waterreflections=0 #1 "not used" 🟩
+r_waterreflectionsquality=0 #4 "not used" 🟩
 r_watervolumecaustics=0 #0
 r_watervolumecausticsdensity=128 #128 "test 256"
 r_watervolumecausticsmaxdist=35 #35
 
 ## fog
 e_fog=1 #1 "render fog"
+e_svoti_troposphere_active=0 #0 "test 1, svoti troposphere fog"
 e_volumetricfog=1 #1 "volumetric fog, require_app_restart"
 r_fogshadows=0 #0 "test 1"
 r_fogshadowswater=1 #1 "test 0"
@@ -276,8 +277,8 @@ r_volumetricfogreprojectionmode=1 #1
 r_volumetricfogsample=2 #2 "test 0,1"
 r_volumetricfogshadow=1 #1 "test 0"
 r_volumetricfogsunlightcorrection=1 #1
-r_volumetricfogtexdepth=64 #64 "test 16,32"
-r_volumetricfogtexscale=10 #10 "test 12,20"
+r_volumetricfogtexdepth=32 #64 "test 16,32" 🟩
+r_volumetricfogtexscale=12 #10 "test 12,20" 🟩
 wh_pl_fowenabled=1 #1
 wh_pl_fowvisibilityradius=100 #100
 
@@ -301,7 +302,8 @@ r_ssdoradiusmax=0.3 #0.3
 r_ssdoradiusmin=0.015 #0.015 "test 0.1,0.075"
 r_ssdosecondarybandradius=15 #15
 
-## voxel based global illumination
+## voxel based global illumination (sparse voxel octree total illumination)
+e_svoti_asynccompute=1 #0 "test 1, simultaneous compute" 🟩
 e_svoti_conemaxlength=30 #30
 e_svoti_diffuse_cache=0 #0
 e_svoti_diffuseamplifier=1 #1
@@ -360,7 +362,7 @@ gpu_particle_physics=1 #0 "test 1, require_app_restart" 🟩
 r_particleshalfres=0 #0
 r_particlesrefraction=1 #1
 r_particlessoftisec=1 #1
-wh_e_particlesviewdistmul=3 #3
+wh_e_particlesviewdistmul=3 #3 "test 2"
 
 ## shadows
 e_gsmsizeswh=3,10,32,120,600
@@ -513,14 +515,6 @@ e_decalsoverlapping=1 #1
 e_decalsplacementtestareasize=0.08 #0.08
 e_decalsrange=20 #20
 
-## test
-r_reflections=0 #1 "not used" 🟩
-r_reflectionsquality=0 #3 "not used" 🟩
-r_watercaustics=0 #1 "not used" 🟩
-r_watergodrays=0 #1 "not used" 🟩
-r_waterreflections=0 #1 "not used" 🟩
-r_waterreflectionsquality=0 #4 "not used" 🟩
-
 ## etcetera
 #con_display_last_messages=0 #
 #con_line_buffer_size=1000 #1000
@@ -544,6 +538,12 @@ r_waterreflectionsquality=0 #4 "not used" 🟩
 #r_texturesstreampoolsize=10240 #10240 "vram 5120,8192,10240, 8gb,12gb,16gb"
 #r_width=3840 #
 #r_xboximmediatethresholdpercent=5 #5
+#sys_budget_soundchannels=32 #32 "debug"
+#sys_budget_soundcpu=15 #15 "test 0, debug"
+#sys_budget_streamingthroughput=1024 #1024 "test 3000, ram, debug"
+#sys_budget_sysmem=512 #512 "test 0, ram, debug"
+#sys_budget_videomem=90 #90 "test 0, vram, debug"
+#sys_enable_budgetmonitoring=0 #0 "debug"
 #sys_pakpriority=2 #2 "test"
 #sys_spec_full= # "sets all"
 #sys_spec_physics= # "not used"
@@ -552,6 +552,9 @@ r_waterreflectionsquality=0 #4 "not used" 🟩
 #sys_spec_textureresolution=9 #9 "vram 7,8,9, 8gb,12gb,16gb"
 #sys_spec_water= # "not used"
 #wh_cs_playerlockdisabled=0 #0
+#wh_hitreaction_enabled=1 #1
+#wh_pl_battlearcherymousesensitivity=40 #40
+#wh_pl_lockpickingmousesensitivitycoefficient=0.68 #0.68
 #wh_player_deepwaterlevel=0.85 #0.85
 #wh_sys_nosavepotion=0 #0
 #wh_ui_showcompass=1 #1
@@ -578,17 +581,21 @@ follow npc or focus camera  - mouse 3
 inventory                   - tab
 jump                        - space | mouse 4 (this is also dodge)
 lock on opponent            - c
+lock on opponent            - delete (just use c "lock on opponent")
 pat your dog or horse       - e
+previous opponent           - delete (just use c "lock on opponent")
 quick chat with focus       - mouse 3
 special attack              - f | mouse 5 (kick in clinch/fistfight, mercy kill, tackle, stealth kill/takedown)
 toggle crouch               - l ctrl
 
 ## game settings
-telemetry - no
+telemetry - no (doubt this respects the setting)
 
 ## mods
 more carry weight - ptf - max-63-1-1-1738734672.7z
 unlimited saving ii-14-1-0-1738700295.zip
+
+## how to and mods all in one (wip)
 ```
 
 ---
