@@ -1,4 +1,4 @@
-## updated 2/13/2025 v0.2.5 :ramen: e_timeofday=4.2
+## updated 2/15/2025 v0.2.6 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -157,7 +157,7 @@ s_soundvolume=1 #1
 wh_snd_ignore_focus=1 #0 🟩
 
 ## fovs
-cl_fov=67.6727 #63.0883 "100 horizontal" 🟩
+#cl_fov=67.6727 #63.0883 "100 horizontal, using hfov" 🟩
 cl_hfov=100 #95 "100 horizontal" 🟩
 pl_movement.power_sprint_targetfov=67.6727 #55 "100 horizontal" 🟩
 r_drawnearfov=67.6727 #60 "100 horizontal" 🟩
