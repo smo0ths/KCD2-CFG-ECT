@@ -1,8 +1,10 @@
 ## updated 2/21/2025 v0.2.7 :ramen: e_timeofday=4.2
 
-#### wip ultra config i will be optimizing more
+#### ultra config
 
-#### mods ect under cfg
+#### download open ALL MY MODS.zip and drop ALL MY MODS folder in your Mods folder (custom hud/f5 save/1069 weight)
+
+#### check under config (how to/mods explained/ect)
 
 ---
 
