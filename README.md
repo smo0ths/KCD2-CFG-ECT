@@ -1,4 +1,4 @@
-## updated 2/15/2025 v0.2.6 :ramen: e_timeofday=4.2
+## updated 2/21/2025 v0.2.7 :ramen: e_timeofday=4.2
 
 #### wip ultra config i will be optimizing more
 
@@ -589,13 +589,63 @@ special attack              - f | mouse 5 (kick in clinch/fistfight, mercy kill,
 toggle crouch               - l ctrl
 
 ## game settings
-telemetry - no (doubt this respects the setting)
+telemetry - no
 
-## mods
-more carry weight - ptf - max-63-1-1-1738734672.7z
-unlimited saving ii-14-1-0-1738700295.zip
+## make mods
+make folder Libs(or other files like Scripts) with your mod path after and edited file (e.g. "Libs\UI\Textures\hud.dds")
+right click on Libs(or multiple files like Scripts) > winrar > archive > zip > rename Data.pak(not .zip) > on time tab uncheck high precision time format > press ok
+e.g. KingdomComeDeliverance2\Mods\ALL MY MODS\Data\Data.pak\Libs\UI\Textures\hud.dds (should be the path)
+extract then archive again if you want to edit files
 
-## how to and mods all in one (wip)
+# save mod
+Mods\ALL MY MODS\Data\Data.pak\Libs\Config\defaultProfile.xml
+(reference KingdomComeDeliverance2\Data\IPL_GameData.pak\Libs\Config\defaultProfile.xml)
+
+add the <action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+
+  <!-- default -->
+  <actionmap name="player" priority="default" exclusivity="0">
+    <action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+    <include actionmap="movement" />
+    <include actionmap="camera" />
+    <include actionmap="interaction" />
+    <include actionmap="draw_holster_torch" />
+    <include actionmap="toggle_helmet" />
+    <include actionmap="open_ui" />
+    <action name="toggle_crouch" onPress="1" keyboard="_keybinds_ref_" xboxpad="xi_thumbr" pspad="pad_r3" />
+    <action name="grab_body" onPress="1" onRelease="1" keyboard="_keybinds_ref_" xboxpad="xi_shoulderl" pspad="pad_l1" />
+  </actionmap>
+
+Mods\ALL MY MODS\Data\Data.pak\Scripts\Startup\savefunc.lua
+(reference KingdomComeDeliverance2\Data\Scripts.pak\Scripts\Startup\)
+
+System.AddCCommand("quicksave", "quicksave()", "quicksaves")
+
+function quicksave()
+    if (Game.IsLoadingEngineSaveGame()) then
+        return
+    end
+
+    Game.SaveGameViaResting()
+end
+
+# weight mod
+Mods\ALL MY MODS\Data\Data.pak\Libs\Tables\rpg\rpg_param__Weight.xml
+(reference KingdomComeDeliverance2\Data\Tables.pak\Libs\Tables\rpg\)
+
+<?xml version="1.0" encoding="us-ascii"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
+  <rpg_params version="1">
+    <rpg_param rpg_param_key="BaseInventoryCapacity" rpg_param_value="1069" />
+    <rpg_param rpg_param_key="MaxBaseInventoryCapacity" rpg_param_value="1069" />
+  </rpg_params>
+</database>
+
+# for .dds files i used paint.net(from github) and save in this format
+BC2 (Linear, DXT3)
+Medium Compression
+Error Metric - Uniform
+Generate Mip Maps - Super Sampling
 ```
 
 ---
