@@ -13,6 +13,7 @@
 ## add launch command: +exec user.cfg (needed for binds to be read ect, -devmode not needed only for debug/dev tools)
 ## delete cache folder %userprofile%/saved games/kingdomcome2/shaders (not needed, maybe after update)
 ## and restart after getting to main menu (needed depending on cvar)
+## type ?_superresolution or anything like ?_shadow or ?_texture in console ` key to find a cvar
 ## 🟩 shows changes from default ultra
 
 ## console access
