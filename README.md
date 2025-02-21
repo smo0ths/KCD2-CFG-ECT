@@ -581,7 +581,7 @@ follow npc or focus camera  - mouse 3
 inventory                   - tab
 jump                        - space | mouse 4 (this is also dodge)
 lock on opponent            - c
-lock on opponent            - delete (just use c "lock on opponent")
+next opponent               - delete (just use c "lock on opponent")
 pat your dog or horse       - e
 previous opponent           - delete (just use c "lock on opponent")
 quick chat with focus       - mouse 3
