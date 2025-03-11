@@ -1,4 +1,4 @@
-## updated 2/21/2025 v0.2.7 :ramen: e_timeofday=4.2
+## updated 3/10/2025 v0.2.8 :ramen: e_timeofday=4.2
 
 #### ultra config
 
@@ -102,9 +102,9 @@ e_vegetation=1 #1
 g_battledust_enable=1 #1 "test 0"
 i_lighteffects=1 #1
 log_enableremoteconsole=0 #1 🟩
-r_brightness=0.49 #0.5 🟩
+r_brightness=0.5 #0.5
 r_colorbits=32 #32 "color resolution in bpp, require_app_restart"
-r_contrast=0.51 #0.5 🟩
+r_contrast=0.5 #0.5
 r_cubemapgenerationadditionalwaitframeswh=3 #3
 r_detailtextures=0 #1 "test, texture overlays, not used" 🟩
 r_gamma=1 #1
