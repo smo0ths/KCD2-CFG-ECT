@@ -158,6 +158,8 @@ wh_ui_subtitlesize=3 #0 🟩
 
 ## use windows auto HDR (RTX HDR doesn't work) if you are using HDR obviously, it does the trick
 
+-------------------------------------------------------------
+
 ## keybinds
 accept/use                  - v
 combat free look            - l alt
@@ -173,8 +175,12 @@ quick chat with focus       - mouse 3
 special attack              - f | mouse 5 (kick in clinch/fistfight, mercy kill, tackle, stealth kill/takedown)
 toggle crouch               - l ctrl
 
+-------------------------------------------------------------
+
 ## game settings
 telemetry - no
+
+-------------------------------------------------------------
 
 ## make mods
 make folder Libs(or other files like Scripts) with your mod path after and edited file (e.g. "Libs\UI\Textures\hud.dds")
@@ -182,7 +188,9 @@ right click on Libs(or multiple files like Scripts) > winrar > archive > zip > r
 e.g. KingdomComeDeliverance2\Mods\ALL MY MODS\Data\Data.pak\Libs\UI\Textures\hud.dds (should be the path)
 extract then archive again if you want to edit files
 
-# save mod
+-------------------------------------------------------------
+
+## save mod
 Mods\ALL MY MODS\Data\Data.pak\Libs\Config\defaultProfile.xml
 (reference KingdomComeDeliverance2\Data\IPL_GameData.pak\Libs\Config\defaultProfile.xml)
 
@@ -219,7 +227,9 @@ function quicksave()
     Game.SaveGameViaResting()
 end
 
-# weight mod
+-------------------------------------------------------------
+
+## weight mod
 Mods\ALL MY MODS\Data\Data.pak\Libs\Tables\rpg\rpg_param__Weight.xml
 (reference KingdomComeDeliverance2\Data\Tables.pak\Libs\Tables\rpg\)
 
@@ -231,7 +241,9 @@ Mods\ALL MY MODS\Data\Data.pak\Libs\Tables\rpg\rpg_param__Weight.xml
   </rpg_params>
 </database>
 
-# for .dds files i used paint.net(from github) and save in this format
+-------------------------------------------------------------
+
+## for .dds files i used paint.net(from github) and save in this format
 BC2 (Linear, DXT3)
 Medium Compression
 Error Metric - Uniform
