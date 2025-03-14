@@ -156,7 +156,7 @@ wh_ui_subtitlesize=3 #0 🟩
 
 ## update dlss to latest and force preset k(0x0000000B) (in nvidiaprofileinspector) (game presets to J which is older)
 
-## use windows auto HDR (RTX HDR doesn't work) if you are using HDR obviously, it does the trick
+## use windows auto HDR (RTX HDR doesn't work) if you are using HDR obviously, it does the trick (there's ways to get RTX hdr/RTX dynamic vibrance working most likely good luck)
 
 -------------------------------------------------------------
 
