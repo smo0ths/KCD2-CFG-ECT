@@ -1,4 +1,4 @@
-## updated 3/14/2025 v0.3.0 :ramen: e_timeofday=4.2
+## updated 3/14/2025 v0.3.1 :ramen: e_timeofday=4.2
 
 #### ultra config
 
@@ -99,7 +99,6 @@ g_radialblur=0 #1 🟩
 gpu_particle_physics=1 #0 "test 1, require_app_restart" 🟩
 log_enableremoteconsole=0 #1 🟩
 pl_movement.power_sprint_targetfov=67.6727 #55 "100 horizontal" 🟩
-r_deferredshadingtiled=2 #3 "without debug info" 🟩
 r_depthoffield=0 #2 🟩
 r_detailtextures=0 #1 "test, texture overlays, not used" 🟩
 r_drawnearfov=67.6727 #60 "100 horizontal" 🟩
