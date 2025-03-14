@@ -1,3 +1,14 @@
+## updated 3/14/2025 v0.3.0 :ramen: e_timeofday=4.2
+
+#### ultra config
+
+#### download open ALL MY MODS.zip and drop ALL MY MODS folder in your Mods folder (custom hud/f5 save(on horse to)/1069 weight)
+
+#### check under config (how to/mods explained/ect)
+
+---
+
+```python
 ## create user.cfg in kingdomcomedeliverance2 folder and copy paste
 ## add launch command: +exec user.cfg (needed for binds to be read ect, -devmode not needed only for debug/dev tools)
 ## delete cache folder %userprofile%/saved games/kingdomcome2/shaders (not needed, maybe after update)
@@ -134,3 +145,97 @@ wh_ui_enablesubtitlespeakername=1 #0 🟩
 wh_ui_holdcursorduration=0.1 #0.3 🟩
 wh_ui_showvignette=0 #1 🟩
 wh_ui_subtitlesize=3 #0 🟩
+```
+
+---
+
+## ect
+
+```python
+## enable rebar gives you ~3 fps (in nvidiaprofileinspector) (test)
+
+## update dlss to latest and force preset k(0x0000000B) (in nvidiaprofileinspector) (game presets to J which is older)
+
+## use windows auto HDR (RTX HDR doesn't work) if you are using HDR obviously, it does the trick
+
+## keybinds
+accept/use                  - v
+combat free look            - l alt
+cycle tabs                  - i
+follow npc or focus camera  - mouse 3
+inventory                   - tab
+jump                        - space | mouse 4 (this is also dodge)
+lock on opponent            - c
+next opponent               - delete (just use c "lock on opponent")
+pat your dog or horse       - e
+previous opponent           - delete (just use c "lock on opponent")
+quick chat with focus       - mouse 3
+special attack              - f | mouse 5 (kick in clinch/fistfight, mercy kill, tackle, stealth kill/takedown)
+toggle crouch               - l ctrl
+
+## game settings
+telemetry - no
+
+## make mods
+make folder Libs(or other files like Scripts) with your mod path after and edited file (e.g. "Libs\UI\Textures\hud.dds")
+right click on Libs(or multiple files like Scripts) > winrar > archive > zip > rename Data.pak(not .zip) > on time tab uncheck high precision time format > press ok
+e.g. KingdomComeDeliverance2\Mods\ALL MY MODS\Data\Data.pak\Libs\UI\Textures\hud.dds (should be the path)
+extract then archive again if you want to edit files
+
+# save mod
+Mods\ALL MY MODS\Data\Data.pak\Libs\Config\defaultProfile.xml
+(reference KingdomComeDeliverance2\Data\IPL_GameData.pak\Libs\Config\defaultProfile.xml)
+
+add the <action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+
+  <!-- default -->
+  <actionmap name="player" priority="default" exclusivity="0">
+    <action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+    <include actionmap="movement" />
+    <include actionmap="camera" />
+    <include actionmap="interaction" />
+    <include actionmap="draw_holster_torch" />
+    <include actionmap="toggle_helmet" />
+    <include actionmap="open_ui" />
+    <action name="toggle_crouch" onPress="1" keyboard="_keybinds_ref_" xboxpad="xi_thumbr" pspad="pad_r3" />
+    <action name="grab_body" onPress="1" onRelease="1" keyboard="_keybinds_ref_" xboxpad="xi_shoulderl" pspad="pad_l1" />
+  </actionmap>
+
+add the <action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+
+    <actionmap name="horse_mounted" priority="gameplay" exclusivity="1">
+        <action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+
+Mods\ALL MY MODS\Data\Data.pak\Scripts\Startup\savefunc.lua
+(reference KingdomComeDeliverance2\Data\Scripts.pak\Scripts\Startup\)
+
+System.AddCCommand("quicksave", "quicksave()", "quicksaves")
+
+function quicksave()
+    if (Game.IsLoadingEngineSaveGame()) then
+        return
+    end
+
+    Game.SaveGameViaResting()
+end
+
+# weight mod
+Mods\ALL MY MODS\Data\Data.pak\Libs\Tables\rpg\rpg_param__Weight.xml
+(reference KingdomComeDeliverance2\Data\Tables.pak\Libs\Tables\rpg\)
+
+<?xml version="1.0" encoding="us-ascii"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
+  <rpg_params version="1">
+    <rpg_param rpg_param_key="BaseInventoryCapacity" rpg_param_value="1069" />
+    <rpg_param rpg_param_key="MaxBaseInventoryCapacity" rpg_param_value="1069" />
+  </rpg_params>
+</database>
+
+# for .dds files i used paint.net(from github) and save in this format
+BC2 (Linear, DXT3)
+Medium Compression
+Error Metric - Uniform
+Generate Mip Maps - Super Sampling
+```
+
+---
