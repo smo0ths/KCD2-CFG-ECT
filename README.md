@@ -1,4 +1,4 @@
-## updated 3/14/2025 v0.3.1 :ramen: e_timeofday=4.2
+## updated 3/25/2025 v0.3.3 :ramen: e_timeofday=4.2
 
 #### ultra config
 
@@ -49,9 +49,15 @@ q_shaderterrain=3 #
 q_shadervegetation=3 #
 q_shaderwater=3 #
 
+## misc
+cl_hfov=100 #95 "100 horizontal" 🟩
+cl_sensitivity=9 # 🟩
+s_musicvolume=0.8 #1 🟩
+sys_maxfps=111 #-1 🟩
+
 ## binds
-#bind apostrophe root/test1.cfg #
-#bind semicolon root/test2.cfg #
+#bind apostrophe exec root/test1.cfg #
+#bind semicolon exec root/test2.cfg #
 bind comma r_sharpening 0 # "for cutscenes"
 bind lbracket e_svoti_skycolormultiplier -0.8001 #-0.8001 "use at day"
 bind mwheel_down cl_hfov 100 #
@@ -60,39 +66,19 @@ bind period s_musicvolume 0 #
 bind rbracket e_svoti_skycolormultiplier 8.0001 #-0.8001 "use at night"
 bind slash exec root/user.cfg #
 
-## cpu test
-e_svoti_numstreamingthreads=1 #2 "test 1" 🟩
-p_num_threads=1 #1 "test, internal physics threads"
-r_waterupdatethread=5 #5
-sys_job_system_enable=1 #1
-sys_job_system_max_worker=8 #16 "test 0,8" 🟩
-sys_limit_phys_thread_count=1 #1 "limits p_num_threads to physical cpu count"
-sys_main_cpu=0 #0 "game thread"
-sys_physics_cpu=2 #1 "test 2" 🟩
-sys_streaming_cpu=1 #1
-sys_streaming_cpu_worker=8 #5 "test" 🟩
-sys_taskthread0_cpu=3 #3
-sys_taskthread1_cpu=4 #5 "test" 🟩
-sys_taskthread2_cpu=5 #4 "test" 🟩
-sys_taskthread3_cpu=3 #3
-sys_taskthread4_cpu=6 #2 "test" 🟩
-sys_taskthread5_cpu=7 #1 "test" 🟩
-
 ## tweaks
 r_3plkeydirstr=0,0,-90
 #0,0,90 "comment breaks command" 🟩
 
 ## tweaks
 cl_fovblendtime=0.25 #1 "test" 🟩
-cl_hfov=100 #95 "100 horizontal" 🟩
-cl_sensitivity=9 # 🟩
-e_decalsallowgamedecals=0 #1 "test, not used" 🟩
+e_decalsallowgamedecals=0 #1 "test" 🟩
 e_svoti_asynccompute=1 #0 "test 1, simultaneous compute" 🟩
-e_svoti_reflect_vox_max=1 #500 "test 1" 🟩
+e_svoti_reflect_vox_max=500 #500 "test 1"
 e_viewdistmin=0 #5 🟩
-e_viewdistratiodetail=0 #30 "test, not used" 🟩
+e_viewdistratiodetail=0 #30 "test" 🟩
 e_viewdistratiomodifiergamedecals=1 #4 🟩
-e_viewdistratioportals=0 #60 "test, not used" 🟩
+e_viewdistratioportals=0 #60 "test" 🟩
 e_wateroceanbottom=0 #1 🟩
 es_maxphysdistcloth=180 #300 "test 80,100,180" 🟩
 g_radialblur=0 #1 🟩
@@ -100,7 +86,7 @@ gpu_particle_physics=1 #0 "test 1, require_app_restart" 🟩
 log_enableremoteconsole=0 #1 🟩
 pl_movement.power_sprint_targetfov=67.6727 #55 "100 horizontal" 🟩
 r_depthoffield=0 #2 🟩
-r_detailtextures=0 #1 "test, texture overlays, not used" 🟩
+r_detailtextures=1 #1 "test, texture overlays"
 r_drawnearfov=67.6727 #60 "100 horizontal" 🟩
 r_hdrgrainamount=0 #1 🟩
 r_hdrrangeadapt=1 #0 "test" 🟩
@@ -108,10 +94,10 @@ r_hdrvignetting=0 #1 🟩
 r_motionblur=0 #2 "1,2, camera,camera and object" 🟩
 r_motionblurquality=0 #2 "0,1,2, low,med,high, sample count" 🟩
 r_multigpu=0 #1 🟩
-r_nohwgamma=0 #1 🟩
-r_postprocesshud3d=0 #1 "not used" 🟩
-r_reflections=0 #1 "not used" 🟩
-r_reflectionsquality=0 #3 "not used" 🟩
+r_nohwgamma=1 #1 "test"
+r_postprocesshud3d=1 #1 "test"
+r_reflections=1 #1 "test"
+r_reflectionsquality=3 #3 "test"
 r_ssrefldistance=0.05 #0.15 "better ssr" 🟩
 r_ssreflhalfres=1 #0  🟩
 r_superresolution_mode=2 # "dlss" 🟩
@@ -119,16 +105,15 @@ r_superresolution_nvidia_dlss_preset=10 #0 "0,10 convolutional,transformer" 🟩
 r_superresolution_sharpness=0 #0.5 🟩
 r_supersampling=0 #1 🟩
 r_thermalvision=0 #1 🟩
+r_volumetricfogminimumlightbulbsize=2 #2 "interior lights fog"
 r_volumetricfogtexdepth=32 #64 "test 16,32" 🟩
 r_volumetricfogtexscale=12 #10 "test 12,20" 🟩
 r_vsync=0 #1 🟩
-r_watercaustics=0 #1 "not used" 🟩
-r_watergodrays=0 #1 "not used" 🟩
-r_waterreflections=0 #1 "not used" 🟩
-r_waterreflectionsquality=0 #4 "not used" 🟩
-s_musicvolume=0.7 #1 🟩
+r_watercaustics=1 #1
+r_watergodrays=1 #1
+r_waterreflections=1 #1 "test"
+r_waterreflectionsquality=4 #4 "test, not documented"
 sys_flash_edgeaa=0 #1 🟩
-sys_maxfps=158 #-1 🟩
 wh_ansel_enable=0 #1 🟩
 wh_cl_neardof=0 #1 🟩
 wh_cs_playerinputmousesensitivity=0.05 #0.1 "test" 🟩
