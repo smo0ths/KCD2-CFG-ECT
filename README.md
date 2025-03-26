@@ -72,7 +72,7 @@ r_3plkeydirstr=0,0,-90
 
 ## tweaks
 cl_fovblendtime=0.25 #1 "test" 🟩
-e_decalsallowgamedecals=0 #1 "test" 🟩
+e_decalsallowgamedecals=1 #1 "test"
 e_svoti_asynccompute=1 #0 "test 1, simultaneous compute" 🟩
 e_svoti_reflect_vox_max=500 #500 "test 1"
 e_viewdistmin=0 #5 🟩
