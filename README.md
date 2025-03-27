@@ -1,8 +1,8 @@
-## updated 3/25/2025 v0.3.3 :ramen: e_timeofday=4.2
+## updated 3/27/2025 v0.3.4 :ramen: e_timeofday=4.2
 
 #### ultra config
 
-#### download open ALL MY MODS.zip and drop ALL MY MODS folder in your Mods folder (custom hud/f5 save(on horse to)/1069 weight)
+#### download open ALL MY MODS.zip and drop ALL MY MODS folder in your Mods folder (custom hud/f5 save(on horse to)/9969 weight)
 
 #### check under config (how to/mods explained/ect)
 
@@ -56,14 +56,13 @@ s_musicvolume=0.8 #1 🟩
 sys_maxfps=111 #-1 🟩
 
 ## binds
-#bind apostrophe exec root/test1.cfg #
-#bind semicolon exec root/test2.cfg #
+bind apostrophe exec root/test1.cfg #
 bind comma r_sharpening 0 # "for cutscenes"
 bind lbracket e_svoti_skycolormultiplier -0.8001 #-0.8001 "use at day"
 bind mwheel_down cl_hfov 100 #
 bind mwheel_up cl_hfov 45 #
-bind period s_musicvolume 0 #
 bind rbracket e_svoti_skycolormultiplier 8.0001 #-0.8001 "use at night"
+bind semicolon exec root/test2.cfg #
 bind slash exec root/user.cfg #
 
 ## tweaks
@@ -136,11 +135,11 @@ wh_ui_subtitlesize=3 #0 🟩
 ## ect
 
 ```python
-## enable rebar gives you ~3 fps (in nvidiaprofileinspector) (test)
+## enable rebar gives you ~3 fps (in nvidiaprofileinspector) (test, ymmv)
 
 ## update dlss to latest and force preset k(0x0000000B) (in nvidiaprofileinspector) (game presets to J which is older)
 
-## use windows auto HDR (RTX HDR doesn't work) if you are using HDR obviously, it does the trick (there's ways to get RTX hdr/RTX dynamic vibrance working most likely good luck)
+## seems to be a vrr bug just turn it off unless you need it or find a fix and want to use it
 
 -------------------------------------------------------------
 
@@ -220,8 +219,8 @@ Mods\ALL MY MODS\Data\Data.pak\Libs\Tables\rpg\rpg_param__Weight.xml
 <?xml version="1.0" encoding="us-ascii"?>
 <database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
   <rpg_params version="1">
-    <rpg_param rpg_param_key="BaseInventoryCapacity" rpg_param_value="1069" />
-    <rpg_param rpg_param_key="MaxBaseInventoryCapacity" rpg_param_value="1069" />
+    <rpg_param rpg_param_key="BaseInventoryCapacity" rpg_param_value="9969" />
+    <rpg_param rpg_param_key="MaxBaseInventoryCapacity" rpg_param_value="9969" />
   </rpg_params>
 </database>
 
