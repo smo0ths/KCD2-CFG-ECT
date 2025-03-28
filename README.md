@@ -1,4 +1,4 @@
-## updated 3/27/2025 v0.3.4 :ramen: e_timeofday=4.2
+## updated 3/28/2025 v0.3.5 :ramen: e_timeofday=4.2
 
 #### ultra config
 
@@ -53,7 +53,7 @@ q_shaderwater=3 #
 cl_hfov=100 #95 "100 horizontal" 🟩
 cl_sensitivity=9 # 🟩
 s_musicvolume=0.8 #1 🟩
-sys_maxfps=111 #-1 🟩
+sys_maxfps=-1 #-1 🟩
 
 ## binds
 bind apostrophe exec root/test1.cfg #
