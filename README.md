@@ -1,10 +1,10 @@
-## updated 5/26/2025 v0.3.6 :ramen: e_timeofday=4.2
+## updated 6/17/2025 v0.3.7 :ramen: e_timeofday=4.2
 
 #### ultra config and mods
 
 #### download/drop ALL MY MODS folder in your Mods folder
 
-#### mods are custom hud/f5 save(on horse to)/9969 weight and work with game version 1.3.1 (otherwise you need to manually update defaultProfile.xml)
+#### mods are custom hud/f5 save(on horse to)/9969 weight and work with game version 1.3.2 (otherwise you need to manually update defaultProfile.xml)
 
 #### check under config (how to/mods explained/ect)
 
