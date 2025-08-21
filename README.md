@@ -1,4 +1,4 @@
-## updated 6/17/2025 v0.3.7 :ramen: e_timeofday=4.2
+## updated 8/21/2025 v0.3.8 :ramen: e_timeofday=4.2
 
 #### ultra config and mods
 
@@ -55,7 +55,7 @@ q_shaderwater=3 #
 cl_hfov=100 #95 "100 horizontal" 🟩
 cl_sensitivity=9 # 🟩
 s_musicvolume=0.8 #1 🟩
-sys_maxfps=-1 #-1 🟩
+sys_maxfps=-1 #-1
 
 ## binds
 bind apostrophe exec root/test1.cfg #
@@ -101,8 +101,6 @@ r_reflections=1 #1 "test"
 r_reflectionsquality=3 #3 "test"
 r_ssrefldistance=0.05 #0.15 "better ssr" 🟩
 r_ssreflhalfres=1 #0  🟩
-r_superresolution_mode=2 # "dlss" 🟩
-r_superresolution_nvidia_dlss_preset=10 #0 "0,10 convolutional,transformer" 🟩
 r_superresolution_sharpness=0 #0.5 🟩
 r_supersampling=0 #1 🟩
 r_thermalvision=0 #1 🟩
@@ -125,6 +123,7 @@ wh_e_particlesviewdistmul=2 #3 "test 2" 🟩
 wh_horse_cameracentering=0 #0.2 "not a unknown command" 🟩
 wh_pl_showfirecursor=1 #0 🟩
 wh_snd_ignore_focus=1 #0 🟩
+wh_sys_prosenable=0 # "1" 🟩
 wh_ui_bubblesenabled=0 #1 🟩
 wh_ui_enablesubtitlespeakername=1 #0 🟩
 wh_ui_holdcursorduration=0.1 #0.3 🟩
